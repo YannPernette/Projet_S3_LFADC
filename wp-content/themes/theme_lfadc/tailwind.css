@@ -9,5 +9,15 @@ Tags: simple, facile, sans danger, base pour la suite
 */
 
 @tailwind base;
+
+@layer base {
+
+  body {
+    @apply font-montserrat;
+  }
+
+}
+
+
 @tailwind components;
 @tailwind utilities;
