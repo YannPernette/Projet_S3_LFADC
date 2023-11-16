@@ -8,5 +8,9 @@
 </head>
 <body>
 
-<p>vilgdfiubodivdos</p>
+<p class="text-body">les patates sont douces</p>
+<p class="text-h5">les patates sont douces</p>
+<p class="text-h3">les patates sont douces</p>
+<p class="text-h2">les patates sont douces</p>
+<p class="text-h1">les patates sont douces</p>
     

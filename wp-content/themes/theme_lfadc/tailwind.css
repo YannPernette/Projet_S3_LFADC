@@ -1,0 +1,23 @@
+/*
+Theme Name: Le futur a déjà commencé THEME
+Theme URI: https://monurlpersonnel.com/mesthemes
+Author: Prenom NOM
+Author URI: https://monurlpersonnel.com
+Description: Le thème développer avec Chaton
+Version: 0.1
+Tags: simple, facile, sans danger, base pour la suite
+*/
+
+@tailwind base;
+
+@layer base {
+
+  body {
+    @apply font-montserrat;
+  }
+
+}
+
+
+@tailwind components;
+@tailwind utilities;
