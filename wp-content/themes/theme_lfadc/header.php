@@ -8,5 +8,5 @@
 </head>
 <body>
 
-<p class="text-3xl">les patates sont douces</p>
+<p class="text-base">les patates sont douces</p>
     
