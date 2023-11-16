@@ -1,12 +1,12 @@
+<head>
+    <?php wp_head(); ?>
+    <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" media="all" />
+</head>
+
+
 <?php get_header() ?>
 
-Bonjour, ceci est le site de l'avenir est déjà là !
+<p class="text-5xl">Bonjour, ceci est le site de l'avenir est déjà là !</p>
 <hr />
-<br />
-
-<?php echo do_shortcode('[wrt_print_rt_wp_responsive_tabs tabset_id="1"]'); ?>
-
-<?php echo do_shortcode('[wrt_print_rt_wp_responsive_tabs tabset_id="2"]'); ?>
-
 
 <?php get_footer() ?>
