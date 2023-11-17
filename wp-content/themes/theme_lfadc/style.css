@@ -446,6 +446,8 @@ video {
 
 body {
   font-family: Montserrat, sans-serif;
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 247 241 / var(--tw-bg-opacity));
 }
 
 *, ::before, ::after {
