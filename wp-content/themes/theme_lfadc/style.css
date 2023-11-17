@@ -9,7 +9,7 @@ Tags: simple, facile, sans danger, base pour la suite
 */
 
 /*
-! tailwindcss v3.3.5 | MIT License | https://tailwindcss.com
+! tailwindcss v3.3.2 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -201,10 +201,6 @@ select,
 textarea {
   font-family: inherit;
   /* 1 */
-  font-feature-settings: inherit;
-  /* 1 */
-  font-variation-settings: inherit;
-  /* 1 */
   font-size: 100%;
   /* 1 */
   font-weight: inherit;
@@ -352,14 +348,6 @@ ul,
 menu {
   list-style: none;
   margin: 0;
-  padding: 0;
-}
-
-/*
-Reset default styling for dialogs.
-*/
-
-dialog {
   padding: 0;
 }
 
@@ -548,8 +536,38 @@ body {
   --tw-backdrop-sepia:  ;
 }
 
-.fill-bleu {
-  fill: #00425A;
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
 }
 
 .font-dela-gothic-one {
@@ -580,35 +598,12 @@ body {
   font-weight: 800;
 }
 
-.text-orange {
-  --tw-text-opacity: 1;
-  color: rgb(239 135 49 / var(--tw-text-opacity));
-}
-
-.text-bleu {
-  --tw-text-opacity: 1;
-  color: rgb(0 66 90 / var(--tw-text-opacity));
-}
-
-.text-\[\#A223EC\] {
-  --tw-text-opacity: 1;
-  color: rgb(162 35 236 / var(--tw-text-opacity));
-}
-
-.text-\[\#A2232\] {
-  color: #A2232;
-}
-
-.text-\[\#A2232a\] {
-  --tw-text-opacity: 1;
-  color: rgb(162 35 42 / var(--tw-text-opacity));
-}
-
-.text-\[\#A232a\] {
-  color: #A232a;
-}
-
 .text-\[\#AD232a\] {
   --tw-text-opacity: 1;
   color: rgb(173 35 42 / var(--tw-text-opacity));
+}
+
+.text-orange {
+  --tw-text-opacity: 1;
+  color: rgb(239 135 49 / var(--tw-text-opacity));
 }
