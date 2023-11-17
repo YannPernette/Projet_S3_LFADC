@@ -1,11 +1,15 @@
-<!-- Code exécuté à chaque fois que le thème est chargé -->
+<?php add_theme_support( 'post-thumbnails' ); ?>
 
-<?php
+<?php 
+    //ajouter une nouvelle zone de menu à mon thème
+    function register_my_menu(){
+        register_nav_menus( array(
+            'header-menu' => __( 'Menu header'),
+            'footer-menu'  => __( 'Menu footer'),
+        ) );
+    }
+    add_action( 'init', 'register_my_menu', 0 );
+   
+?>
 
-function montheme_supports() {
-    add_theme_support('title-tag');
-}
 
-
-
-add_action('after_setup_theme', 'montheme_supports');
