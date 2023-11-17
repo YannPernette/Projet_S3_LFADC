@@ -14,3 +14,4 @@
 <p class="text-h2">les patates sont douces</p>
 <p class="text-h1">les patates sont douces</p>
 <p>test</p>
+<h2>Test</h2>
