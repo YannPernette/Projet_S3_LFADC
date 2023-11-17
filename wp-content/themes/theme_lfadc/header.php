@@ -15,4 +15,4 @@
 <p class="text-h1">les patates sont douces</p>
 <p>test</p>
 <h2 class="font-extrabold text-[#AD232a]" >Test</h2>
-<h3>test</h3>
+<h3>soleil</h3>
