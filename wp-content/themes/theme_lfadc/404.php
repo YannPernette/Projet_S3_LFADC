@@ -9,7 +9,6 @@
         <h1>Erreur 404</h1>
         <p>La page que vous recherchez n'existe pas.</p>
         <a href="/">Retour à l'accueil</a>
-        <h1>J'avais pas d'autres endroits</h1>
     </div>
 </body>
 
