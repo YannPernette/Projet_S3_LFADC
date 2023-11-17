@@ -548,10 +548,6 @@ body {
   --tw-backdrop-sepia:  ;
 }
 
-.fill-bleu {
-  fill: #00425A;
-}
-
 .font-dela-gothic-one {
   font-family: Dela Gothic One, sans-serif;
 }
@@ -580,35 +576,12 @@ body {
   font-weight: 800;
 }
 
-.text-orange {
-  --tw-text-opacity: 1;
-  color: rgb(239 135 49 / var(--tw-text-opacity));
-}
-
-.text-bleu {
-  --tw-text-opacity: 1;
-  color: rgb(0 66 90 / var(--tw-text-opacity));
-}
-
-.text-\[\#A223EC\] {
-  --tw-text-opacity: 1;
-  color: rgb(162 35 236 / var(--tw-text-opacity));
-}
-
-.text-\[\#A2232\] {
-  color: #A2232;
-}
-
-.text-\[\#A2232a\] {
-  --tw-text-opacity: 1;
-  color: rgb(162 35 42 / var(--tw-text-opacity));
-}
-
-.text-\[\#A232a\] {
-  color: #A232a;
-}
-
 .text-\[\#AD232a\] {
   --tw-text-opacity: 1;
   color: rgb(173 35 42 / var(--tw-text-opacity));
+}
+
+.text-orange {
+  --tw-text-opacity: 1;
+  color: rgb(239 135 49 / var(--tw-text-opacity));
 }
