@@ -14,13 +14,13 @@
 <h2 class="font-extrabold text-[#AD232a]" >Test</h2>
 <p>test marion</p>
 
-<div class="wrap">
-        <div class="navigation text-orange">
+<div class="">
+        <div class=" text-orange">
             <header class="header">
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php echo wp_get_attachment_image(64, 'full'); ?></a>
                 <!-- logo -->
                 
-                <div class="container">
+                <div class="">
                   <?php
                       wp_nav_menu ( array (
                       'theme_location' => 'header-menu' 
