@@ -8,7 +8,7 @@
 
 
 <?php get_header() ?>
-<div class="bg-[#2A34CD]">
+<div>
     <p class="text-5xl text-orange font-dela-gothic-one">Bonjour, ceci est le site de l'avenir est déjà là !</p>
     <hr />
 </div>
