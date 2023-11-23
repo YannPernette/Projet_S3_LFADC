@@ -7,9 +7,15 @@ get_header();
 ?>
 <div>
     <div>
-        <h1></h1>
-        <h3></h3>
-        <h3></h3>
+        <h1>
+            <?php the_title(); ?>
+        </h1>
+        <h3>
+            Un souci ou une question ?
+        </h3>
+        <h3>
+            Une envie de proposer un projet ?
+        </h3>
     </div>
     <div>
         <h2></h2>
@@ -24,7 +30,7 @@ get_header();
                 <div><label for=""></label><input type="text"></div>
                 <div><label for=""></label><input type="text"></div>
                 <div><input type="checkbox" name="" value=""><label for=""></label></div>
-                <input type="submit" value="SubmitContact">
+                <input type="submit" value="Submit">
             </form>
         </div>
     </div>
