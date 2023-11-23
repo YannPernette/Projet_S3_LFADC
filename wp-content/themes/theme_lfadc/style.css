@@ -550,6 +550,11 @@ body {
   --tw-backdrop-sepia:  ;
 }
 
+.mx-32 {
+  margin-left: 8rem;
+  margin-right: 8rem;
+}
+
 .grid {
   display: grid;
 }
