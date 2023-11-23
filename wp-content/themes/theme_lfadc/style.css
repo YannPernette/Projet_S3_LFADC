@@ -436,6 +436,32 @@ body {
   font-family: Montserrat, sans-serif;
 }
 
+header ul{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.button-orange {
+  background-color: #EF8731;
+  color: #fff;
+  border: #EF8731;
+  border-radius: 5px;
+  padding:10px;
+}
+
+.button-orange:hover {
+  background-color: #00425A;
+  color: #fff;
+  border: #00425A;
+  border-radius: 5px;
+  padding:10px;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -536,37 +562,21 @@ body {
   --tw-backdrop-sepia:  ;
 }
 
+.grid {
+  display: grid;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .font-dela-gothic-one {
   font-family: Dela Gothic One, sans-serif;
 }
 
-.text-body {
-  font-size: 1.1vw;
-}
-
-.text-h1 {
-  font-size: 2.7vw;
-}
-
-.text-h2 {
-  font-size: 1.8vw;
-}
-
-.text-h3 {
-  font-size: 1.65vw;
-}
-
-.text-h5 {
-  font-size: 1.4vw;
-}
-
-.font-extrabold {
-  font-weight: 800;
-}
-
-.text-\[\#AD232a\] {
+.text-bleu {
   --tw-text-opacity: 1;
-  color: rgb(173 35 42 / var(--tw-text-opacity));
+  color: rgb(0 66 90 / var(--tw-text-opacity));
 }
 
 .text-orange {

@@ -8,23 +8,20 @@
 </head>
 <body>
 
-<p class="text-body">les patates sont douces</p>
-
-<p>test</p>
-<h2 class="font-extrabold text-[#AD232a]" >Test</h2>
-<p>test marion</p>
-
+<!-- page marion -->
+<!--  -->
 <div class="">
-        <div class=" text-orange">
-            <header class="header">
-                <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php echo wp_get_attachment_image(64, 'full'); ?></a>
+        <div class="text-bleu ">
+            <header class="header grid grid-cols-2">
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php echo wp_get_attachment_image(10, 'small', array( 100,100 ) ); ?></a>
                 <!-- logo -->
                 
-                <div class="">
-                  <?php
-                      wp_nav_menu ( array (
-                      'theme_location' => 'header-menu' 
-                      ) ); ?>
+                <div class="menu">
+                        <?php
+                        wp_nav_menu ( array (
+                        'theme_location' => 'header-menu' 
+                        ) ); ?>
+                        <button class="button-orange"> Faire un don</button>
                 </div>
             </header>
         </div>

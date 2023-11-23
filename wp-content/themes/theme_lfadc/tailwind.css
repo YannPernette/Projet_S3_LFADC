@@ -16,6 +16,47 @@ Tags: simple, facile, sans danger, base pour la suite
     @apply font-montserrat;
   }
 
+  header ul{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .menu{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .button-orange {
+    background-color: #EF8731;
+    color: #fff;
+    border: #EF8731;
+    border-radius: 5px;
+    padding:10px;
+  }
+
+  .button-orange:hover {
+    background-color: #00425A;
+    color: #fff;
+    border: #00425A;
+    border-radius: 5px;
+    padding:10px;
+  }
+
+  .button-bleu {
+    background-color: #00425A;
+    color: #fff;
+    border: #00425A;
+    border-radius: 5px;
+    padding:10px;
+  }
+
+  .button-bleu:hover {
+    background-color: #EF8731;
+    color: #fff;
+    border: #EF8731;
+    border-radius: 5px;
+    padding:10px;
+  }
 }
 
 
