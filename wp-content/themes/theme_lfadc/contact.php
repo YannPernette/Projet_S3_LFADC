@@ -5,7 +5,7 @@ Template Name: Contact
 
 get_header();
 ?>
-<div class="bg-beige">
+<div>
     <div class="text-center">
         <h1>
             <?php the_title(); ?>

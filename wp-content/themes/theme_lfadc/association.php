@@ -10,7 +10,7 @@ get_header();
     </div>
 
 
-    <div class="grid grid-cols-2 justify-items-end mb-20">
+    <div class="grid grid-cols-2 mb-20">
 
         <div>
             <h2 class="text-h2 font-bold">Qui sommes-nous ?</h2>
@@ -29,7 +29,7 @@ get_header();
         </div>
 
         <div>
-            <p>dwbjhvgswugv iyvgikyvkwvyhukgsrjugyusrvgysvgyuisygvykiv</p>
+            <?php echo wp_get_attachment_image(42, array(500, 300)); ?>
         </div>
 
     </div>
@@ -39,7 +39,7 @@ get_header();
     <div class="grid grid-cols-2 mx-32">
 
         <div>
-            <p>dwbjhvgswugv iyvgikyvkwvyhukgsrjugyusrvgysvgyuisygvykiv</p>
+            <?php echo wp_get_attachment_image(44, array(500, 300)); ?>
         </div>
 
         <div>
@@ -54,12 +54,12 @@ get_header();
         </div>
 
         <div>
-            <p>dwbjhvgswugv iyvgikyvkwvyhukgsrjugyusrvgysvgyuisygvykiv</p>
+            <?php echo wp_get_attachment_image(43, array(500, 300)); ?>
         </div>
 
 
         <div>
-            <p>dwbjhvgswugv iyvgikyvkwvyhukgsrjugyusrvgysvgyuisygvykiv</p>
+            <?php echo wp_get_attachment_image(45, array(500, 300)); ?>
         </div>
 
         <div>
@@ -70,13 +70,14 @@ get_header();
     </div>
 
 
-</div>
-
-
-<div class="bg-vert-clair py-20 px-0 my-12 text-h5 font-bold flex justify-center">
-    <div class="text-bleu">
-        <p class="mb-0">Notre association vous intéresse ?</p>
-        <p class="mb-6">Envie de proposer un projet ou d’y participer ?</p>
-        <p>Vous pouvez devenir membre de notre association, remplissez ce formulaire ici</p>
+    <div class="bg-vert-clair py-20 my-12 text-h5 font-bold flex justify-center">
+        <div class="text-bleu">
+            <p class="mb-0">Notre association vous intéresse ?</p>
+            <p class="mb-6">Envie de proposer un projet ou d’y participer ?</p>
+            <p>Vous pouvez devenir membre de notre association, remplissez ce formulaire ici</p>
+        </div>
     </div>
+
 </div>
+
+<?php get_footer(); ?>

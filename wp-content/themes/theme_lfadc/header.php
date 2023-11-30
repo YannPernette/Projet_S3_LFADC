@@ -8,19 +8,19 @@
 </head>
 <body>
 
-<p class="text-body">les patates sont douces</p>
-
-<div class="wrap">
-        <div class="navigation text-orange">
-            <header class="header">
-                <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php echo wp_get_attachment_image(64, 'full'); ?></a>
+<!-- page marion -->
+<!--  -->
+<div class="">
+        <div class="text-bleu ">
+            <header class="header grid grid-cols-2">
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php echo wp_get_attachment_image(10, 'full'); ?></a>
                 <!-- logo -->
                 
-                <div class="container">
-                  <?php
-                      wp_nav_menu ( array (
-                      'theme_location' => 'header-menu' 
-                      ) ); ?>
+                <div class="hover:text-orange  ">
+                        <?php
+                        wp_nav_menu ( array (
+                        'theme_location' => 'header-menu' 
+                        ) ); ?>
                 </div>
             </header>
         </div>
