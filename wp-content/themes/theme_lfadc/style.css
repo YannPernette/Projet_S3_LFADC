@@ -548,6 +548,40 @@ body {
   --tw-backdrop-sepia:  ;
 }
 
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
 .font-dela-gothic-one {
   font-family: Dela Gothic One, sans-serif;
 }
@@ -556,20 +590,13 @@ body {
   font-size: 1.1vw;
 }
 
-.text-h1 {
-  font-size: 2.7vw;
+.font-extrabold {
+  font-weight: 800;
 }
 
-.text-h2 {
-  font-size: 1.8vw;
-}
-
-.text-h3 {
-  font-size: 1.65vw;
-}
-
-.text-h5 {
-  font-size: 1.4vw;
+.text-\[\#AD232a\] {
+  --tw-text-opacity: 1;
+  color: rgb(173 35 42 / var(--tw-text-opacity));
 }
 
 .text-orange {
