@@ -587,20 +587,50 @@ body {
   margin-right: auto;
 }
 
+.mx-32 {
+  margin-left: 8rem;
+  margin-right: 8rem;
+}
+
+.my-12 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
 .mb-0 {
   margin-bottom: 0px;
+}
+
+.mb-20 {
+  margin-bottom: 5rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
 }
 
 .flex {
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
 .max-w-7xl {
   max-width: 80rem;
 }
 
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .items-center {
   align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .justify-between {
@@ -623,9 +653,24 @@ body {
   background-color: rgb(0 66 90 / var(--tw-bg-opacity));
 }
 
+.bg-vert-clair {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 138 112 / var(--tw-bg-opacity));
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.px-32 {
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .text-center {
@@ -636,8 +681,28 @@ body {
   font-family: Dela Gothic One, sans-serif;
 }
 
+.font-montserrat {
+  font-family: Montserrat, sans-serif;
+}
+
 .text-body {
   font-size: 1.1vw;
+}
+
+.text-h2 {
+  font-size: 1.8vw;
+}
+
+.text-h3 {
+  font-size: 1.65vw;
+}
+
+.text-h5 {
+  font-size: 1.4vw;
+}
+
+.font-bold {
+  font-weight: 700;
 }
 
 .text-blanc {
@@ -648,6 +713,11 @@ body {
 .text-orange {
   --tw-text-opacity: 1;
   color: rgb(239 135 49 / var(--tw-text-opacity));
+}
+
+.text-bleu {
+  --tw-text-opacity: 1;
+  color: rgb(0 66 90 / var(--tw-text-opacity));
 }
 
 @media (min-width: 640px) {
