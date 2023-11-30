@@ -567,19 +567,6 @@ body {
   font-family: Dela Gothic One, sans-serif;
 }
 
-.text-body {
-  font-size: 1.1vw;
-}
-
-.font-extrabold {
-  font-weight: 800;
-}
-
-.text-\[\#AD232a\] {
-  --tw-text-opacity: 1;
-  color: rgb(173 35 42 / var(--tw-text-opacity));
-}
-
 .text-orange {
   --tw-text-opacity: 1;
   color: rgb(239 135 49 / var(--tw-text-opacity));
