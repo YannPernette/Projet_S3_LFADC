@@ -14,7 +14,6 @@ Tags: simple, facile, sans danger, base pour la suite
 
   body {
     @apply font-montserrat;
-    @apply bg-beige;
   }
 
 }
