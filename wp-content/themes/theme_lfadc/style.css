@@ -590,16 +590,32 @@ body {
   font-size: 1.1vw;
 }
 
-.font-extrabold {
-  font-weight: 800;
+.text-h1 {
+  font-size: 2.7vw;
 }
 
-.text-\[\#AD232a\] {
-  --tw-text-opacity: 1;
-  color: rgb(173 35 42 / var(--tw-text-opacity));
+.text-h2 {
+  font-size: 1.8vw;
+}
+
+.text-h3 {
+  font-size: 1.65vw;
+}
+
+.text-h5 {
+  font-size: 1.4vw;
+}
+
+.font-extrabold {
+  font-weight: 800;
 }
 
 .text-orange {
   --tw-text-opacity: 1;
   color: rgb(239 135 49 / var(--tw-text-opacity));
+}
+
+.text-\[\#AD232a\] {
+  --tw-text-opacity: 1;
+  color: rgb(173 35 42 / var(--tw-text-opacity));
 }
