@@ -446,8 +446,6 @@ video {
 
 body {
   font-family: Montserrat, sans-serif;
-  --tw-bg-opacity: 1;
-  background-color: rgb(253 247 241 / var(--tw-bg-opacity));
 }
 
 *, ::before, ::after {
@@ -550,42 +548,42 @@ body {
   --tw-backdrop-sepia:  ;
 }
 
-.mx-32 {
-  margin-left: 8rem;
-  margin-right: 8rem;
+.container {
+  width: 100%;
 }
 
-.my-12 {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
 }
 
 .mb-0 {
   margin-bottom: 0px;
-}
-
-.mb-20 {
-  margin-bottom: 5rem;
-}
-
-.mb-6 {
-  margin-bottom: 1.5rem;
-}
-
-.flex {
-  display: flex;
-}
-
-.grid {
-  display: grid;
-}
-
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.justify-center {
-  justify-content: center;
 }
 
 .bg-beige {
@@ -593,56 +591,25 @@ body {
   background-color: rgb(253 247 241 / var(--tw-bg-opacity));
 }
 
-.bg-vert-clair {
-  --tw-bg-opacity: 1;
-  background-color: rgb(31 138 112 / var(--tw-bg-opacity));
-}
-
-.px-32 {
-  padding-left: 8rem;
-  padding-right: 8rem;
-}
-
-.py-20 {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+.text-center {
+  text-align: center;
 }
 
 .font-dela-gothic-one {
   font-family: Dela Gothic One, sans-serif;
 }
 
-.font-montserrat {
-  font-family: Montserrat, sans-serif;
-}
-
 .text-body {
   font-size: 1.1vw;
 }
 
-.text-h1 {
-  font-size: 2.7vw;
+.font-extrabold {
+  font-weight: 800;
 }
 
-.text-h2 {
-  font-size: 1.8vw;
-}
-
-.text-h3 {
-  font-size: 1.65vw;
-}
-
-.text-h5 {
-  font-size: 1.4vw;
-}
-
-.font-bold {
-  font-weight: 700;
-}
-
-.text-bleu {
+.text-\[\#AD232a\] {
   --tw-text-opacity: 1;
-  color: rgb(0 66 90 / var(--tw-text-opacity));
+  color: rgb(173 35 42 / var(--tw-text-opacity));
 }
 
 .text-orange {
