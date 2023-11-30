@@ -10,7 +10,7 @@ get_header();
     </div>
 
 
-    <div class="grid grid-cols-2 mb-20">
+    <div class="grid grid-cols-2 justify-items-end mb-20">
 
         <div>
             <h2 class="text-h2 font-bold">Qui sommes-nous ?</h2>
@@ -70,12 +70,13 @@ get_header();
     </div>
 
 
-    <div class="bg-vert-clair py-20 my-12 text-h5 font-bold flex justify-center">
-        <div class="text-bleu">
-            <p class="mb-0">Notre association vous intéresse ?</p>
-            <p class="mb-6">Envie de proposer un projet ou d’y participer ?</p>
-            <p>Vous pouvez devenir membre de notre association, remplissez ce formulaire ici</p>
-        </div>
-    </div>
+</div>
 
+
+<div class="bg-vert-clair py-20 px-0 my-12 text-h5 font-bold flex justify-center">
+    <div class="text-bleu">
+        <p class="mb-0">Notre association vous intéresse ?</p>
+        <p class="mb-6">Envie de proposer un projet ou d’y participer ?</p>
+        <p>Vous pouvez devenir membre de notre association, remplissez ce formulaire ici</p>
+    </div>
 </div>

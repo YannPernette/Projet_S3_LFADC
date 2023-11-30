@@ -592,6 +592,11 @@ body {
   margin-bottom: 3rem;
 }
 
+.mx-0 {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
 .mb-0 {
   margin-bottom: 0px;
 }
@@ -620,6 +625,18 @@ body {
   justify-content: center;
 }
 
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-items-end {
+  justify-items: end;
+}
+
+.justify-items-center {
+  justify-items: center;
+}
+
 .bg-beige {
   --tw-bg-opacity: 1;
   background-color: rgb(253 247 241 / var(--tw-bg-opacity));
@@ -638,6 +655,11 @@ body {
 .py-20 {
   padding-top: 5rem;
   padding-bottom: 5rem;
+}
+
+.px-0 {
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .text-center {
