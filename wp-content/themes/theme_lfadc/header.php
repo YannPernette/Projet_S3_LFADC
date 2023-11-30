@@ -8,12 +8,6 @@
 </head>
 <body>
 
-<p class="text-body">les patates sont douces</p>
-
-<p>test</p>
-<h2 class="font-extrabold text-[#AD232a]" >Test</h2>
-<p>test marion</p>
-
 <div class="">
         <div class=" text-orange">
             <header class="header">
