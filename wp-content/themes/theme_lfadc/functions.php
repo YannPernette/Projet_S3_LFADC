@@ -6,6 +6,9 @@
         register_nav_menus( array(
             'header-menu' => __( 'Menu header'),
             'footer-menu'  => __( 'Menu footer'),
+            'footer-menu2'  => __( 'Footer2'),
+            'footer-menu3'  => __( 'Footer3'),
+            'footer-menu4'  => __( 'Footer4'),
         ) );
     }
     add_action( 'init', 'register_my_menu', 0 );

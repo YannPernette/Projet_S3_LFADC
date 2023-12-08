@@ -11,13 +11,57 @@ Tags: simple, facile, sans danger, base pour la suite
 @tailwind base;
 
 @layer base {
-
   body {
     @apply font-montserrat;
+    @apply text-body;
+  }
+  
+    h2 {
+    @apply text-h2;
   }
 
-}
+  h3 {
+    @apply text-h3;
+  }
+  
 
+  #menu-footer {
+    @apply space-y-0;
+  }
+
+  #menu-footer2 {
+    @apply space-y-0;
+  }
+
+  #menu-footer3 {
+    @apply space-y-0;
+  }
+
+  #menu-footer4 {
+    @apply space-y-0;
+  }
+
+  #menu-footer > li > a {
+	@apply text-blanc;
+    @apply hover:text-blanc;
+  }
+
+  #menu-footer2 > li > a {
+	@apply text-blanc;
+    @apply hover:text-blanc;
+  }
+
+  #menu-footer3 > li > a {
+	@apply text-blanc;
+    @apply hover:text-blanc;
+  }
+
+  #menu-footer4 > li > a {
+	@apply text-blanc;
+    @apply hover:text-blanc;
+  }
+}
 
 @tailwind components;
 @tailwind utilities;
+
