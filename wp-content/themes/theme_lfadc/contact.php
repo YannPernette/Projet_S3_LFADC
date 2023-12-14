@@ -6,17 +6,22 @@ Template Name: Contact
 get_header();
 ?>
 <div class="bg-beige grid grid-rows-[1fr] text-bleu text-body">
-    <div class="text-center font-dela-gothic-one min-w-screen bg-cover bg-center bg-[url('http://lfadc.kyliangaertner.space/wp-content/uploads/2023/12/Rectangle-16.png')] py-24 pb-28">
-        <h1 class="sm:text-h1_mobile text-h1">
-            <?php the_title(); ?>
-        </h1>
-        <h3 class='sm:text-h3_mobile text-h3 mt-8 mb-0'>
-            Un souci ou une question ?
-        </h3>
-        <h3 class='sm:text-h3_mobile text-h3 mt-2 mb-0'>
-            Une envie de proposer un projet ?
-        </h3>
+    <div class="text-center font-dela-gothic-one relative overflow-hidden h-[19rem]">
+        <img src="http://localhost/LFADC/wp-content/uploads/2023/12/climat-scaled-1.webp" alt="banner img" class="object-cover w-full h-full" style="object-position: 50% 69%;">
+        <div class="absolute top-0 left-0 w-full h-full opacity-50 bg-blanc z-10"></div>
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 w-full">
+            <h1 class="sm:text-h1_mobile text-h1">
+                <?php the_title(); ?>
+            </h1>
+            <h3 class='sm:text-h3_mobile text-h3 mt-8 mb-0'>
+                Un souci ou une question ?
+            </h3>
+            <h3 class='sm:text-h3_mobile text-h3 mt-2 mb-0'>
+                Une envie de proposer un projet ?
+            </h3>
+        </div>
     </div>
+
     <div class='sm:mx-[4vw] md:mx-[10vw] mx-[20vw] mt-10'>
         <div class="text-noir mb-10">
             <h2 class='sm:text-h2_mobile text-h2 text-bleu mb-6 mt-0 font-dela-gothic-one'>Voici comment nous contacter</h2>
