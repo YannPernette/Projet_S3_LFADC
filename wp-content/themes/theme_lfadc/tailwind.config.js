@@ -10,6 +10,7 @@ module.exports = {
       "vert-fonce": "#205B46",
       "orange": "#EF8731",
       "beige": "#FDF7F1",
+      "transparent": "transparent",
     },
     fontFamily: {
       "dela-gothic-one": ['Dela Gothic One', 'sans-serif'],
