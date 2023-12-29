@@ -447,6 +447,11 @@ video {
 body {
   font-family: Montserrat, sans-serif;
   font-size: 1rem;
+  --sb-track-color: #BDE0D8;
+  --sb-thumb-color: #1f8a70;
+  --sb-size: 11px;
+  scrollbar-color:  var(--sb-thumb-color) 
+                      var(--sb-track-color);
 }
 
 h2 {
@@ -457,11 +462,26 @@ h3 {
   font-size: 1.5rem;
 }
 
+body::-webkit-scrollbar {
+  width: var(--sb-size);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 4px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 2px;
+}
+
 header {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   transition: padding-bottom 0.4s ease;
   padding-bottom: 0px;
+  font-family: Montserrat, sans-serif;
 }
 
 header ul {
@@ -984,8 +1004,8 @@ div.shadow-border:hover::after {
   height: 3rem;
 }
 
-.h-24 {
-  height: 6rem;
+.h-36 {
+  height: 9rem;
 }
 
 .h-40 {
@@ -1013,8 +1033,8 @@ div.shadow-border:hover::after {
   width: 100% !important;
 }
 
-.w-24 {
-  width: 6rem;
+.w-36 {
+  width: 9rem;
 }
 
 .w-40 {

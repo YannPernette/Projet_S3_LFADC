@@ -14,6 +14,12 @@ Tags: simple, facile, sans danger, base pour la suite
   body {
     @apply font-montserrat;
     @apply text-body;
+    --sb-track-color: #BDE0D8;
+    --sb-thumb-color: #1f8a70;
+    --sb-size: 11px;
+
+    scrollbar-color:  var(--sb-thumb-color) 
+                      var(--sb-track-color);
   }
   
     h2 {
@@ -24,10 +30,24 @@ Tags: simple, facile, sans danger, base pour la suite
     @apply text-h3;
   }
 
+  body::-webkit-scrollbar {
+    width: var(--sb-size);
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 4px;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 2px;
+  }
 header {
   @apply bg-blanc;
   transition: padding-bottom 0.4s ease;
   padding-bottom: 0px;
+  @apply font-montserrat;
 }
 
   header ul {
@@ -90,6 +110,7 @@ header .submenu li:first-child {
 header li > a {
   color: #00425A; /* Changez la couleur au survol du lien principal */
 }
+
 
 header .submenu li > a {
   font-size: 1rem;
