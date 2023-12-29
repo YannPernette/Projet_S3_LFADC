@@ -411,12 +411,12 @@ button,
 [type=button] {
   display: inline-block;
   font-weight: 400;
-  color: #FFFFFF;
+  color: #CC3366;
   text-align: center;
   white-space: nowrap;
   user-select: none;
   background-color: transparent;
-  border: 1px solid #EF8731;
+  border: 1px solid #CC3366;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   border-radius: 3px;
@@ -433,7 +433,7 @@ button:hover, button:focus,
 [type=button]:hover,
 [type=button]:focus {
   color: #ffffff;
-  background-color: #EF8731;
+  background-color: #CC3366;
   text-decoration: none;
 }
 button:not(:disabled),

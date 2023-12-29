@@ -12,6 +12,15 @@
         ) );
     }
     add_action( 'init', 'register_my_menu', 0 );
+
+    class Custom_Walker_Nav_Menu extends Walker_Nav_Menu {
+        function start_lvl(&$output, $depth = 0, $args = null) {
+            // Ajoutez la classe 'submenu' à la liste des sous-menus
+            $indent = str_repeat("\t", $depth);
+            $output .= "\n$indent<ul class=\"submenu\">\n";
+        }
+    }
+   
    
 ?>
 <?php
