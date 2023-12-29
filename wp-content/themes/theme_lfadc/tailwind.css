@@ -65,6 +65,7 @@ header {
 
 #menu-header > li:last-child > a {
   color: #ffffff; /* Changez la couleur au survol du lien principal */
+  @apply hover:!text-blanc;
 }
 
 /* Affichez le menu déroulant au survol */
@@ -91,9 +92,71 @@ header li > a {
 }
 
 header .submenu li > a {
-  font-size: 0.925rem;
+  font-size: 1rem;
 }
+
+.all_menu > div {
+  margin-right: 0.7em;
+}
+
+.all_menu > div a {
+  @apply hover:text-orange;
+}
+
+.menu-icon svg {
+  height: 1em;
+  width: 1em;
+  position: relative;
+  left: 1.1em;
+  top: 0.3em;
+  }
+
+.menu-icon2 svg {
+  height: 1em;
+  width: 1em;
+  position: relative;
+	left: 2em;
+  top: 0.3em;
+  }
+
+.menu-icon3 svg {
+  height: 1em;
+  width: 1em;
+  position: relative;
+	left: 0.3em;
+  top: 0.3em;
+  }
+
+  .menu-icon3 > a {
+    display:grid;
+    grid-template-columns: 122px 25px;
+  }
+
+  .menu-icon2 > a {
+    display:grid;
+    grid-template-columns: 75px 40px;
+  }
   
+  .menu-icon > a {
+    display:grid;
+    grid-template-columns: 75px 25px;
+  }
+
+  .header {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .header > .img_logo {
+      grid-area: 1 / 1 / 2 / 2;
+    }
+    .header > .all_menu {
+      grid-area: 1 / 2 / 2 / 6;
+    }
+
 
   #menu-footer {
     @apply space-y-0;
