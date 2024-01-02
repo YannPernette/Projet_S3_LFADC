@@ -13,6 +13,12 @@
 document.addEventListener('DOMContentLoaded', function () {
     var header = document.querySelector('.header');
     var isSubMenuOpen = false;
+    var hamburgerBtn = document.querySelector('.hamburger-btn');
+    var menu_mobile = document.querySelector('.all_menu2');
+
+    hamburgerBtn.addEventListener('click', function () {
+        menu_mobile.classList.toggle('md:block');
+    });
 
     function resetStyles() {
         header.style.paddingBottom = '0px';
@@ -60,10 +66,19 @@ document.addEventListener('DOMContentLoaded', function () {
 <div class="bg-beige">
         <div class="text-bleu ">
             <header class="header">
-                <a class="img_logo w-52" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="http://lfadc.kyliangaertner.space/wp-content/uploads/2023/11/Logo-le-futur-a-deja-commence.webp" alt="logo LFADC"></a>
+                <a class="img_logo w-36 py-5" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="http://lfadc.kyliangaertner.space/wp-content/uploads/2023/11/Logo-le-futur-a-deja-commence.webp" alt="logo LFADC"></a>
                 <!-- logo -->
                 
-                <div class="all_menu flex items-center justify-end">
+                <div class="all_menu flex items-center justify-end md:hidden">
+                        <?php
+                        wp_nav_menu(array(
+                            'theme_location' => 'header-menu',
+                            'walker' => new Custom_Walker_Nav_Menu(),
+                        ));
+                        ?>
+                </div>
+                <button class="bg-none border-0 hamburger-btn hidden md:block focus:!bg-none focus:!border-0 md:!col-start-5">&#9776;</button>
+                <div class="all_menu2 items-center justify-end hidden">
                         <?php
                         wp_nav_menu(array(
                             'theme_location' => 'header-menu',
