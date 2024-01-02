@@ -484,18 +484,18 @@ header {
   font-family: Montserrat, sans-serif;
 }
 
-header ul {
+.all_menu ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-header li {
+.all_menu li {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
 
-header .submenu {
+.all_menu .submenu {
   display: none;
   position: absolute;
   z-index: 1000;
@@ -505,11 +505,11 @@ header .submenu {
   transform: translateX(-11px);
 }
 
-#menu-header > li > a {
+.all_menu #menu-header > li > a {
   font-size: 0.97rem;
 }
 
-#menu-header > li:last-child{
+.all_menu #menu-header > li:last-child{
   background: #EF8731;
   padding: 10px;
   padding-top: 8px;
@@ -518,44 +518,44 @@ header .submenu {
   box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.15);
 }
 
-#menu-header > li:last-child > a {
+.all_menu #menu-header > li:last-child > a {
   color: #ffffff;
   /* Changez la couleur au survol du lien principal */
 }
 
-#menu-header > li:last-child > a:hover {
+.all_menu #menu-header > li:last-child > a:hover {
   --tw-text-opacity: 1 !important;
   color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
 }
 
 /* Affichez le menu déroulant au survol */
 
-header li:hover .submenu {
+.all_menu li:hover .submenu {
   display: block;
 }
 
 /* Style supplémentaire pour les éléments de sous-menu */
 
-header .submenu li {
+.all_menu .submenu li {
   display: block;
   width: 100%;
   padding: 3px;
   /* Ajoutez d'autres styles selon vos besoins */
 }
 
-header .submenu li:first-child {
+.all_menu .submenu li:first-child {
   padding-top: 15px;
   /* Ajoutez d'autres styles selon vos besoins */
 }
 
 /* Styles pour la classe hover:text-orange */
 
-header li > a {
+.all_menu li > a {
   color: #00425A;
   /* Changez la couleur au survol du lien principal */
 }
 
-header .submenu li > a {
+.all_menu .submenu li > a {
   font-size: 1rem;
 }
 
@@ -564,6 +564,109 @@ header .submenu li > a {
 }
 
 .all_menu > div a:hover {
+  --tw-text-opacity: 1;
+  color: rgb(239 135 49 / var(--tw-text-opacity));
+}
+
+.all_menu2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* La hauteur du menu prendra toute la hauteur de l'écran */
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 247 241 / var(--tw-bg-opacity));
+  /* Fond du menu mobile */
+}
+
+.all_menu2 ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.all_menu2 ul > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
+.all_menu2 ul {
+  /* Espacement vertical entre les éléments de la liste */
+}
+
+.all_menu2 li {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.all_menu2 .submenu {
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  background-color: #fff;
+  padding-left: 8px;
+  padding-right: 8px;
+  transform: translateX(-11px);
+}
+
+.all_menu2 #menu-header > li > a {
+  font-size: 0.97rem;
+  color: #00425A;
+  /* Couleur du texte pour les liens principaux */
+}
+
+.all_menu2 #menu-header > li:last-child {
+  background: #EF8731;
+  padding: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.15);
+}
+
+.all_menu2 #menu-header > li:last-child > a {
+  color: #ffffff;
+  /* Couleur du texte pour le dernier lien au survol */
+}
+
+/* Affichez le menu déroulant au survol */
+
+.all_menu2 li:hover .submenu {
+  display: block;
+}
+
+/* Style supplémentaire pour les éléments de sous-menu */
+
+.all_menu2 .submenu li {
+  display: block;
+  width: 100%;
+  padding: 3px;
+  /* Ajoutez d'autres styles selon vos besoins */
+}
+
+.all_menu2 .submenu li:first-child {
+  padding-top: 15px;
+  /* Ajoutez d'autres styles selon vos besoins */
+}
+
+/* Styles pour la classe hover:text-orange */
+
+.all_menu2 li > a {
+  color: #00425A;
+  /* Couleur du texte pour les liens principaux */
+}
+
+.all_menu2 .submenu li > a {
+  font-size: 1rem;
+}
+
+.all_menu2 > div {
+  margin-right: 0.7em;
+}
+
+.all_menu2 > div a:hover {
   --tw-text-opacity: 1;
   color: rgb(239 135 49 / var(--tw-text-opacity));
 }
@@ -808,6 +911,10 @@ div.shadow-border:hover::after {
   left: 50%;
 }
 
+.left-1\/4 {
+  left: 25%;
+}
+
 .top-0 {
   top: 0px;
 }
@@ -816,24 +923,12 @@ div.shadow-border:hover::after {
   top: 50%;
 }
 
-.top-3 {
-  top: 0.75rem;
-}
-
-.top-1\/4 {
-  top: 25%;
-}
-
 .top-1\/3 {
   top: 33.333333%;
 }
 
-.left-1\/4 {
-  left: 25%;
-}
-
-.left-1 {
-  left: 0.25rem;
+.top-3 {
+  top: 0.75rem;
 }
 
 .z-10 {
@@ -888,11 +983,6 @@ div.shadow-border:hover::after {
   margin-bottom: 1rem;
 }
 
-.mx-48 {
-  margin-left: 12rem;
-  margin-right: 12rem;
-}
-
 .mb-0 {
   margin-bottom: 0px;
 }
@@ -919,6 +1009,10 @@ div.shadow-border:hover::after {
 
 .mb-28 {
   margin-bottom: 7rem;
+}
+
+.mb-3 {
+  margin-bottom: 0.75rem;
 }
 
 .mb-32 {
@@ -953,6 +1047,10 @@ div.shadow-border:hover::after {
   margin-left: 8rem;
 }
 
+.ml-\[-3px\] {
+  margin-left: -3px;
+}
+
 .ml-\[10\%\] {
   margin-left: 10%;
 }
@@ -985,12 +1083,20 @@ div.shadow-border:hover::after {
   margin-top: 3rem;
 }
 
+.mt-14 {
+  margin-top: 3.5rem;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
 }
 
 .mt-20 {
   margin-top: 5rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
 }
 
 .mt-32 {
@@ -1005,24 +1111,34 @@ div.shadow-border:hover::after {
   margin-top: 1.25rem;
 }
 
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
 .mt-8 {
   margin-top: 2rem;
 }
 
-.ml-20 {
-  margin-left: 5rem;
+.mt-\[-13\%\] {
+  margin-top: -13%;
 }
 
-.ml-0 {
-  margin-left: 0px;
+.mt-\[7px\] {
+  margin-top: 7px;
 }
 
-.ml-4 {
-  margin-left: 1rem;
+.line-clamp-1 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
 }
 
-.ml-48 {
-  margin-left: 12rem;
+.line-clamp-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 }
 
 .flex {
@@ -1041,6 +1157,10 @@ div.shadow-border:hover::after {
   height: 3rem;
 }
 
+.h-28 {
+  height: 7rem;
+}
+
 .h-36 {
   height: 9rem;
 }
@@ -1049,8 +1169,16 @@ div.shadow-border:hover::after {
   height: 10rem;
 }
 
-.h-\[160px\] {
-  height: 160px;
+.h-5 {
+  height: 1.25rem;
+}
+
+.h-72 {
+  height: 18rem;
+}
+
+.h-\[15em\] {
+  height: 15em;
 }
 
 .h-\[19rem\] {
@@ -1065,6 +1193,10 @@ div.shadow-border:hover::after {
   height: 224px;
 }
 
+.h-\[44px\] {
+  height: 44px;
+}
+
 .h-fit {
   height: -moz-fit-content;
   height: fit-content;
@@ -1072,66 +1204,6 @@ div.shadow-border:hover::after {
 
 .h-full {
   height: 100%;
-}
-
-.h-\[\] {
-  height: ;
-}
-
-.h-\[2\] {
-  height: 2;
-}
-
-.h-\[20rem\] {
-  height: 20rem;
-}
-
-.h-\[20em\] {
-  height: 20em;
-}
-
-.h-\[15em\] {
-  height: 15em;
-}
-
-.h-32 {
-  height: 8rem;
-}
-
-.h-5 {
-  height: 1.25rem;
-}
-
-.h-52 {
-  height: 13rem;
-}
-
-.h-6 {
-  height: 1.5rem;
-}
-
-.h-60 {
-  height: 15rem;
-}
-
-.h-\[300px\] {
-  height: 300px;
-}
-
-.h-2 {
-  height: 0.5rem;
-}
-
-.h-0 {
-  height: 0px;
-}
-
-.h-\[400px\] {
-  height: 400px;
-}
-
-.h-10 {
-  height: 2.5rem;
 }
 
 .\!w-full {
@@ -1146,8 +1218,12 @@ div.shadow-border:hover::after {
   width: 10rem;
 }
 
-.w-52 {
-  width: 13rem;
+.w-5 {
+  width: 1.25rem;
+}
+
+.w-60 {
+  width: 15rem;
 }
 
 .w-\[100\%\] {
@@ -1170,22 +1246,6 @@ div.shadow-border:hover::after {
   width: 100%;
 }
 
-.w-32 {
-  width: 8rem;
-}
-
-.w-\[300px\] {
-  width: 300px;
-}
-
-.w-60 {
-  width: 15rem;
-}
-
-.w-\[400px\] {
-  width: 400px;
-}
-
 .max-w-7xl {
   max-width: 80rem;
 }
@@ -1197,16 +1257,6 @@ div.shadow-border:hover::after {
 
 .-translate-y-1\/2 {
   --tw-translate-y: -50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.-translate-x-1\/3 {
-  --tw-translate-x: -33.333333%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.-translate-x-1\/4 {
-  --tw-translate-x: -25%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1254,6 +1304,10 @@ div.shadow-border:hover::after {
   justify-content: space-between;
 }
 
+.gap-10 {
+  gap: 2.5rem;
+}
+
 .gap-20 {
   gap: 5rem;
 }
@@ -1264,6 +1318,10 @@ div.shadow-border:hover::after {
 
 .gap-6 {
   gap: 1.5rem;
+}
+
+.gap-\[6px\] {
+  gap: 6px;
 }
 
 .self-start {
@@ -1292,6 +1350,11 @@ div.shadow-border:hover::after {
 
 .rounded-xl {
   border-radius: 0.75rem;
+}
+
+.rounded-t-xl {
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
 }
 
 .border {
@@ -1354,6 +1417,11 @@ div.shadow-border:hover::after {
   background-color: rgb(31 138 112 / var(--tw-bg-opacity));
 }
 
+.bg-vert-fonce {
+  --tw-bg-opacity: 1;
+  background-color: rgb(32 91 70 / var(--tw-bg-opacity));
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -1405,6 +1473,11 @@ div.shadow-border:hover::after {
 .px-\[13\%\] {
   padding-left: 13%;
   padding-right: 13%;
+}
+
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .py-4 {
@@ -1481,12 +1554,20 @@ div.shadow-border:hover::after {
   font-weight: 700;
 }
 
+.font-medium {
+  font-weight: 500;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
 
 .italic {
   font-style: italic;
+}
+
+.leading-tight {
+  line-height: 1.25;
 }
 
 .tracking-wide {
@@ -1547,6 +1628,16 @@ div.shadow-border:hover::after {
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.drop-shadow {
+  --tw-drop-shadow: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.invert {
+  --tw-invert: invert(100%);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .transition-colors {
@@ -1623,6 +1714,10 @@ div.shadow-border:hover::after {
     display: flex;
   }
 
+  .md\:hidden {
+    display: none;
+  }
+
   .md\:h-60 {
     height: 15rem;
   }
@@ -1676,6 +1771,10 @@ div.shadow-border:hover::after {
     height: 10rem;
   }
 
+  .sm\:h-8 {
+    height: 2rem;
+  }
+
   .sm\:w-72 {
     width: 18rem;
   }
@@ -1711,6 +1810,10 @@ div.shadow-border:hover::after {
 
   .sm\:text-h3_mobile {
     font-size: 1.2rem;
+  }
+
+  .sm\:text-h5_mobile {
+    font-size: 0.9rem;
   }
 }
 

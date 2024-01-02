@@ -1,7 +1,7 @@
 <footer class="bg-bleu text-blanc">
     <div class="flex sm:flex-col flex-row justify-between mx-auto max-w-7xl sm:px-4 md:px-6 px-8 pt-5 pb-5">
-        <div class="sm:mb-4 mb-0">
-            <img src="http://localhost/LFADC/wp-content/uploads/2023/12/3.png" alt="Logo du site" class="w-36 h-36">
+        <div class="sm:mb-4 mb-0 w-36 h-36">
+            <img src="http://localhost/LFADC/wp-content/uploads/2023/12/3.png" alt="Logo du site">
         </div>
         <div>
             <nav class="sm:flex-none flex">

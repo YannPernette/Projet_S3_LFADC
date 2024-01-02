@@ -50,17 +50,17 @@ header {
   @apply font-montserrat;
 }
 
-  header ul {
+  .all_menu ul {
     @apply flex;
     @apply justify-between;
     @apply items-center;
   }
 
-  header li {
+  .all_menu li {
     @apply px-2;
   }
 
-  header .submenu {
+  .all_menu .submenu {
     display: none;
     position: absolute;
     z-index: 1000;
@@ -70,11 +70,11 @@ header {
     transform: translateX(-11px);
 }
 
-#menu-header > li > a {
+.all_menu #menu-header > li > a {
   font-size: 0.97rem;
 }
 
-#menu-header > li:last-child{
+.all_menu #menu-header > li:last-child{
   background: #EF8731;
   padding: 10px;
   padding-top: 8px;
@@ -83,36 +83,36 @@ header {
   box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.15);
 }
 
-#menu-header > li:last-child > a {
+.all_menu #menu-header > li:last-child > a {
   color: #ffffff; /* Changez la couleur au survol du lien principal */
   @apply hover:!text-blanc;
 }
 
 /* Affichez le menu déroulant au survol */
-header li:hover .submenu {
+.all_menu li:hover .submenu {
     display: block;
 }
 
 /* Style supplémentaire pour les éléments de sous-menu */
-header .submenu li {
+.all_menu .submenu li {
     display: block;
     width: 100%;
     padding: 3px;
     /* Ajoutez d'autres styles selon vos besoins */
 }
 
-header .submenu li:first-child {
+.all_menu .submenu li:first-child {
   padding-top: 15px;
   /* Ajoutez d'autres styles selon vos besoins */
 }
 
 /* Styles pour la classe hover:text-orange */
-header li > a {
+.all_menu li > a {
   color: #00425A; /* Changez la couleur au survol du lien principal */
 }
 
 
-header .submenu li > a {
+.all_menu .submenu li > a {
   font-size: 1rem;
 }
 
@@ -122,6 +122,106 @@ header .submenu li > a {
 
 .all_menu > div a {
   @apply hover:text-orange;
+}
+
+.all_menu2 {
+  @apply flex;
+  @apply flex-col;
+  @apply justify-center;
+  @apply items-center;
+  @apply h-screen; /* La hauteur du menu prendra toute la hauteur de l'écran */
+  @apply bg-beige; /* Fond du menu mobile */
+}
+
+.all_menu2 ul {
+  @apply flex;
+  @apply flex-col;
+  @apply items-center;
+  @apply space-y-4; /* Espacement vertical entre les éléments de la liste */
+}
+
+.all_menu2 li {
+  @apply px-2;
+}
+
+.all_menu2 .submenu {
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  background-color: #fff;
+  padding-left: 8px;
+  padding-right: 8px;
+  transform: translateX(-11px);
+}
+
+.all_menu2 #menu-header > li > a {
+  font-size: 0.97rem;
+  color: #00425A; /* Couleur du texte pour les liens principaux */
+}
+
+.all_menu2 #menu-header > li:last-child {
+  background: #EF8731;
+  padding: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.15);
+}
+
+.all_menu2 #menu-header > li:last-child > a {
+  color: #ffffff; /* Couleur du texte pour le dernier lien au survol */
+}
+
+/* Affichez le menu déroulant au survol */
+.all_menu2 li:hover .submenu {
+  display: block;
+}
+
+/* Style supplémentaire pour les éléments de sous-menu */
+.all_menu2 .submenu li {
+  display: block;
+  width: 100%;
+  padding: 3px;
+  /* Ajoutez d'autres styles selon vos besoins */
+}
+
+.all_menu2 .submenu li:first-child {
+  padding-top: 15px;
+  /* Ajoutez d'autres styles selon vos besoins */
+}
+
+/* Styles pour la classe hover:text-orange */
+.all_menu2 li > a {
+  color: #00425A; /* Couleur du texte pour les liens principaux */
+}
+
+.all_menu2 .submenu li > a {
+  font-size: 1rem;
+}
+
+.all_menu2 > div {
+  margin-right: 0.7em;
+}
+
+.all_menu2 > div a {
+  @apply focus:text-orange;
+}
+
+.hamburger-btn {
+  @apply hidden;
+  @apply md:block /* Cache le bouton sur les écrans larges */
+  @apply text-4xl; /* Ajustez la taille de la police en conséquence */
+  @apply cursor-pointer;
+}
+
+/* Style pour le menu hamburger ouvert */
+.hamburger-menu-open {
+  @apply md:block;
+}
+
+/* Style pour le menu hamburger fermé */
+.hamburger-menu-closed {
+  @apply md:hidden;
 }
 
 .menu-icon svg {
@@ -250,6 +350,44 @@ div.shadow-border:hover::after {
   background-color: rgba(158, 208, 255, 0.8);
   /* Adjust the last value to change the opacity */
 }
+
+
+.evenement p {
+  @apply mb-10;
+}
+
+.evenement h1 {
+  @apply font-bold sm:text-h1_mobile text-h1 mb-3;
+}
+
+.evenement h2 {
+  @apply font-bold sm:text-h2_mobile text-h2 mb-3;
+}
+
+.evenement h3 {
+  @apply font-bold sm:text-h3_mobile text-h3 mb-3;
+}
+
+.evenement h4 {
+  @apply font-bold sm:text-h4_mobile text-h4 mb-3;
+}
+
+.evenement h5 {
+  @apply font-bold sm:text-h5_mobile text-h5 mb-3;
+}
+
+.evenement figcaption {
+  @apply italic mb-10;
+}
+
+.dropShadowEvenement {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+article:hover .image-container {
+  filter: brightness(50%);
+}			
+
 @tailwind components;
 @tailwind utilities;
 
