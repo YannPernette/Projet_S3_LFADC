@@ -2,10 +2,10 @@
 
 <div class="bg-beige text-bleu text-body sm:text-body_mobile">
 
-    <div class="text-center font-dela-gothic-one relative overflow-hidden h-[19rem]">
-        <img src="http://localhost/LFADC/wp-content/uploads/2023/12/climat-scaled-1.webp" alt="Image de la bannière" class="object-cover w-full h-full" style="object-position: 50% 69%;">
+    <div class="text-center relative overflow-hidden h-[19rem]">
+        <img src="<?php echo wp_get_attachment_url(43); ?>" class="object-cover w-full h-full" style="object-position: 50% 69%;" alt="groupe lfadc">
         <div class="absolute top-0 left-0 w-full h-full opacity-60 bg-blanc z-10"></div>
-        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 w-full">
+        <div class="absolute font-dela-gothic-one top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 w-full">
             <h1 class="sm:text-h1_mobile text-h1">
                 Nos évènements
             </h1>
