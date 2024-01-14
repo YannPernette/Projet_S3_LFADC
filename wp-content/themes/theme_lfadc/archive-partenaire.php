@@ -3,9 +3,7 @@
 <div class="bg-beige text-bleu text-body sm:text-body_mobile">
 
     <div class="text-center relative overflow-hidden h-[19rem]">
-        <div class="object-cover w-full h-full flex items-center">
-            <?php echo wp_get_attachment_image(46, 'full'); ?>
-        </div>
+        <img src="<?php echo wp_get_attachment_url(146); ?>" class="object-cover w-full h-full flex items-center" alt="partenaire affiche">
         <div class="absolute top-0 left-0 w-full h-full opacity-60 bg-blanc z-10"></div>
         <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 w-full">
             <h1 class="sm:text-h1_mobile font-dela-gothic-one text-h1">

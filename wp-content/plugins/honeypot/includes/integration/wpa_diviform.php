@@ -18,6 +18,6 @@ if(!empty($is_divi_form) && $is_divi_form == 'true'){
 		$filteredArray = array_filter($fields_data_array, function ($item) {
 		    return $item['field_id'] !== 'alt_s';
 		});
-		$_POST['et_pb_contact_email_fields'.$divi_form_additional] = json_encode( $filteredArray);
+		$_POST['et_pb_contact_email_fields'.$divi_form_additional] = json_encode( $filteredArray, JSON_UNESCAPED_UNICODE );
 	}
 }
