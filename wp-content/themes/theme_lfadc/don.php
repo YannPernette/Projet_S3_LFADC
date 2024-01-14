@@ -12,7 +12,9 @@ get_header();
 
 
     <div class="text-center relative overflow-hidden h-[19rem]">
-    <img src="<?php echo wp_get_attachment_url(42); ?>" class="object-cover w-full h-full flex items-center" alt="groupe lfadc">
+        <div class="object-cover w-full h-full flex items-center">
+            <?php echo wp_get_attachment_image(42, 'full'); ?>
+        </div>
         <div class="absolute top-0 left-0 w-full h-full opacity-60 bg-blanc z-10"></div>
         <div class="absolute font-dela-gothic-one top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 w-full">
             <h1 class="sm:text-h1_mobile text-h1">

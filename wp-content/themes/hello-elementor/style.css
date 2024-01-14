@@ -125,8 +125,7 @@ pre {
  */
 a {
   background-color: transparent;
-  text-decoration: none;
-  color: #CC3366;
+
 }
 a:hover, a:active {
   color: #333366;
@@ -382,7 +381,6 @@ button,
 [type=reset],
 [type=submit] {
   width: auto;
-  -webkit-appearance: button;
 }
 
 /**
@@ -410,30 +408,12 @@ button,
 [type=submit],
 [type=button] {
   display: inline-block;
-  font-weight: 400;
-  color: #CC3366;
-  text-align: center;
-  white-space: nowrap;
-  user-select: none;
-  background-color: transparent;
-  border: 1px solid #CC3366;
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  border-radius: 3px;
-  transition: all 0.3s;
-}
-button:focus,
-[type=submit]:focus,
-[type=button]:focus {
-  outline: 5px auto -webkit-focus-ring-color;
 }
 button:hover, button:focus,
 [type=submit]:hover,
 [type=submit]:focus,
 [type=button]:hover,
 [type=button]:focus {
-  color: #ffffff;
-  background-color: #CC3366;
   text-decoration: none;
 }
 button:not(:disabled),
