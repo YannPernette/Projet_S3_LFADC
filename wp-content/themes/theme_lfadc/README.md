@@ -29,4 +29,4 @@ SINON ANNULER TOUT et recommencez ou demandez à quelqu'un de compétent de vous
 cd wp-content
 cd themes
 cd theme_lfadc
-npx tailwindcss -i ./tailwind.css -o ./style.css --watch
+npm run starttailwind

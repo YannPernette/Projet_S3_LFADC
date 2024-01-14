@@ -59,7 +59,7 @@ function process_contact_form() {
 	  	$message .= "https://lefuturadejacommence.fr/";
 
         // Utilisez la fonction de courrier WordPress pour envoyer l'e-mail
-        wp_mail( 'lefuturadejacommence@mail.com', $object, $message );
+        wp_mail( 'lefuturadejacommence@gmail.com', $object, $message );
 
         // Redirigez l'utilisateur après l'envoi du formulaire
         wp_redirect( home_url( '/contact/' ) );
@@ -100,7 +100,7 @@ function process_contact_form2() {
         $subject = "Proposition de projet avec l'école $school se situant à $town";
 
         // Envoyer l'e-mail
-        wp_mail("lefuturadejacommence@mail.com", $subject, $message);
+        wp_mail("lefuturadejacommence@gmail.com", $subject, $message);
 
         // Redirigez l'utilisateur après le traitement du formulaire
         wp_redirect(home_url('/enseignants/'));
