@@ -8,12 +8,10 @@ get_header();
 
 <div class="bg-beige text-bleu text-body sm:text-body_mobile">
 
-    <div class="text-center font-dela-gothic-one relative overflow-hidden h-[19rem]">
-        <div class="object-cover w-full h-full flex items-center">
-            <?php echo wp_get_attachment_image(42, 'full'); ?>
-        </div>
+    <div class="text-center relative overflow-hidden h-[19rem]">
+        <img src="<?php echo wp_get_attachment_url(42); ?>" class="object-cover w-full h-full flex items-center" alt="groupe lfadc">
         <div class="absolute top-0 left-0 w-full h-full opacity-60 bg-blanc z-10"></div>
-        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 w-full">
+        <div class="absolute font-dela-gothic-one top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 w-full">
             <h1 class="sm:text-h1_mobile text-h1">
                 <?php the_title(); ?>
             </h1>
@@ -128,8 +126,38 @@ get_header();
                 <?php echo wp_get_attachment_image(87, array(400, 400)); ?>
             </div>
         </div>
-
-        <p class="mb-32">INSERER FORMULAIRE DE KYKY</p>
+        <div class='bg-blanc mb-10 p-4 md:px-3 lg:px-14 px-32 rounded-lg shadow-md'>
+            <h2 class="sm:text-h2_mobile text-h2 text-center md:mb-10 mb-16 mt-4 font-dela-gothic-one">Formulaire d’inscription de projet</h2>
+            <form class="font-montserrat" action="<?php echo esc_url( admin_url('admin-post.php') ); ?>" method="post">
+                <div class="grid grid-cols-3 md:grid-cols-2 gap-5 md:my-0 my-4">
+                    <div><label class="mb-4" for="lastname">Nom*</label><input class="h-12" name="lastname" placeholder="Entrez votre nom" type="text" required></div>
+                    <div><label class="mb-4" for="surname">Prénom*</label><input class="h-12" name="surname" placeholder="Entrez votre prénom" type="text" required></div>
+                    <div class="md:col-span-2"><label class="mb-4" for="mail">Email*</label><input class="h-12" name="mail" placeholder="Entrez votre Email" type="email" required></div>
+                </div>
+                <div class="grid grid-cols-3 md:grid-cols-2 gap-5 md:my-1 my-4">
+                    <div><label class="my-4" for="postal">Code postal*</label><input class="h-12" name="postal" placeholder="Entrez votre code postal" type="text" required></div>
+                    <div><label class="my-4" for="town">Ville*</label><input class="h-12" name="town" placeholder="Entrez votre ville" type="text" required></div>
+                    <div class="md:col-span-2"><label class="md:mb-4 md:mt-0 my-4" for="school">Nom établissement*</label><input class="h-12" name="school" placeholder="Entrez votre établissement" type="text" required></div>
+                </div>
+                <div class="grid grid-cols-3 md:grid-cols-1 md:gap-0 gap-5 md:my-0 my-4">
+                    <div class="my-4 col-span-2"><label class="mb-4" for="project">À quel projet souhaitez-vous participer ? *</label>
+                    <select class="h-12" name="project" required>
+                        <option value="" disabled selected>Choisissez votre projet</option>
+                        <option value="LookUp2050!">LookUp2050!</option>
+                        <option value="Fou2Food">Fou2Food</option>
+                    </select>
+                    </div>
+                    <div class="md:col-span-2"><label class="md:mb-4 md:!mt-0 my-4" for="course">Classe / Niveau des élèves *</label><input class="h-12" name="course" placeholder="Entrez le niveau des élèves" type="text" required></div>
+                </div>
+                <div class="mt-4"><label class="mb-2" for="content">Des questions ? Une remarque ? On vous répond !</label><textarea name="content" id="" placeholder="Entrez votre message" rows="6"></textarea></div>
+                <div class="grid grid-cols-3 md:grid-cols-1 md:gap-0 gap-5 md:my-0 my-4">
+                    <div class='flex my-4 col-span-2'><input class='self-start mr-1' type="checkbox" name="MentionLegal" value="" required><label for="MentionLegal">En envoyant ce formulaire, j'accepte que les informations saisies soient utilisées aux fins de traitement ou de prise de contact avec la personne concernée. Il n’y a pas de transfert de ces données personnelles à des tiers.</label></div>
+                    <input type="hidden" name="action" value="process_contact_form2">
+                    <?php wp_nonce_field( 'process_contact_form2', 'contact_form_nonce' ); ?>
+                    <input class="!bg-orange hover:!bg-[#B85227] !w-full !text-blanc !border-none !rounded-lg !font-semibold my-3 shadow-md" type="submit" value="ENVOYER" >
+                </div>
+            </form>
+        </div>
 
 
     </div>

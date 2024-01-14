@@ -43,6 +43,9 @@ body::-webkit-scrollbar-thumb {
   border-radius: 2px;
 }
 
+.animBanner {
+  animation: slide-fade-in 1s ease-out;
+}
 
 .underlineAnimation {
   text-decoration: none;
@@ -224,6 +227,30 @@ header {
 
 .hamburger-btn {
   display: none;
+}
+
+.mobmenu-right-bt {
+  right: 11px !important;
+  top: 27px !important;
+}
+
+#mobmenuright {
+  margin-top: 20px !important;
+}
+
+#mobmenuright>li>a {
+  font-family: 'Dela Gothic One', 'sans-serif' !important;
+  font-size: 1.125rem !important;
+}
+
+#mobmenuright>li li>a {
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+  font-size: 1rem !important;
+}
+
+#mobmenuright>li li:last-child>a {
+  padding-bottom: 0.75rem !important;
 }
 
 .menu-icon svg {

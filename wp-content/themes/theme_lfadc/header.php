@@ -77,14 +77,5 @@ document.addEventListener('DOMContentLoaded', function () {
                         ));
                         ?>
                 </div>
-                <button class="bg-none border-0 hamburger-btn hidden md:block focus:!bg-none focus:!border-0 md:!col-start-5">&#9776;</button>
-                <div class="all_menu2 items-center justify-end hidden">
-                        <?php
-                        wp_nav_menu(array(
-                            'theme_location' => 'header-menu',
-                            'walker' => new Custom_Walker_Nav_Menu(),
-                        ));
-                        ?>
-                </div>
             </header>
         </div>
