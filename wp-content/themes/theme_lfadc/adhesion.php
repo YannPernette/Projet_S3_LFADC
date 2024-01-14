@@ -9,10 +9,10 @@ get_header();
 <div class="bg-beige text-bleu text-body sm:text-body_mobile overflow-x-hidden">
 
     <div class="text-center relative overflow-hidden h-[19rem]">
-        <img src="<?php echo wp_get_attachment_url(42); ?>" class="object-cover w-full h-full flex items-center" alt="groupe lfadc">
+        <img src="<?php echo wp_get_attachment_url(43); ?>" class="object-cover w-full h-full flex items-center" alt="Bannière Adhésion">
         <div class="absolute top-0 left-0 w-full h-full opacity-60 bg-blanc z-10"></div>
-        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 w-[35rem] md:max-w-[35rem] sm:w-80">
-            <h1 class="sm:text-h1_mobile font-dela-gothic-one text-h1">
+        <div class="absolute font-dela-gothic-one top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 w-[35rem] md:max-w-[35rem] sm:w-80">
+            <h1 class="sm:text-h1_mobile text-h1 animBanner">
                 Envie de devenir membre de notre association ?
             </h1>
         </div>
@@ -29,7 +29,7 @@ get_header();
                 <p class="text-noir">Rejoignez-nous et participez à nos différents événements, échangez des idées et faites partie d’un groupe dynamique et positif, adapté à vos envies, vos disponibilités et vos compétences.</p>
             </div>
             <div class="w-80 sm:w-60 md:mt-10 md:flex md:mx-auto">
-                <?php echo wp_get_attachment_image(87, array(400, 400)); ?>
+                <?php echo wp_get_attachment_image(145, array(400, 400)); ?>
             </div>
         </div>
 
@@ -72,7 +72,7 @@ get_header();
             </div>
 
             <div class="max-w-[30%] sm:max-w-none sm:mt-[-1.5rem]">
-                <img src="<?php echo wp_get_attachment_url(74); ?>" alt="Devenir Membre" class="h-full sm:h-fit object-cover">
+                <img src="<?php echo wp_get_attachment_url(146); ?>" alt="Devenir Membre" class="h-full sm:h-fit object-cover">
             </div>
 
         </div>
@@ -84,7 +84,7 @@ get_header();
             </div>
             <div class="text-vert-clair">
                 <h5 class='sm:text-h5_mobile text-h5 mb-5 md:mb-3 mt-0 font-dela-gothic-one'>Respect de la vie privée</h5>
-                <p>Vous bénéficiez d’un droit d’accès, de rectification, d’opposition et de suppression des données qui vous concernent conformément au RGPD. Vous pouvez exercer ce droit directement en nous contactant à <a class="underlineAnimation text-orange-fonce" target="_blank" href="mailto:lefuturadejacommence@gmail.com">lefuturadejacommence@gmail.com</a>.</p>
+                <p>Vous bénéficiez d’un droit d’accès, de rectification, d’opposition et de suppression des données qui vous concernent conformément au RGPD. Vous pouvez exercer ce droit directement en nous contactant à <a class="underlineAnimation text-orange-fonce hover:text-orange-fonce" target="_blank" href="mailto:lefuturadejacommence@gmail.com">lefuturadejacommence@gmail.com</a>.</p>
             </div>
         </div>
 
