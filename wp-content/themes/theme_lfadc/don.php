@@ -12,15 +12,13 @@ get_header();
 
 
     <div class="text-center relative overflow-hidden h-[19rem]">
-        <div class="object-cover w-full h-full flex items-center">
-            <?php echo wp_get_attachment_image(42, 'full'); ?>
-        </div>
+        <img src="<?php echo wp_get_attachment_url(43); ?>" class="object-cover w-full h-full" style="object-position: 50% 69%;" alt="Bannière Dons">
         <div class="absolute top-0 left-0 w-full h-full opacity-60 bg-blanc z-10"></div>
         <div class="absolute font-dela-gothic-one top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 w-full">
-            <h1 class="sm:text-h1_mobile text-h1">
+            <h1 class="sm:text-h1_mobile text-h1 animBanner">
                 Envie de soutenir l’association ?
             </h1>
-            <h3 class='sm:text-h3_mobile text-h3 mt-8 mb-0'>
+            <h3 class='sm:text-h3_mobile text-h3 mt-8 mb-0 animBanner'>
                 Faites un don !
             </h3>
         </div>
@@ -40,7 +38,7 @@ get_header();
 
         <div class="flex md:flex-col gap-6 items-center mb-20 sm:mb-12">
             <div class="w-full h-60 overflow-hidden flex items-center md:justify-center">
-                <?php echo wp_get_attachment_image(42, array(500, 300)); ?>
+                <?php echo wp_get_attachment_image(43, array(500, 300)); ?>
             </div>
             <div class="md:justify-items-center sm:mt-[-10px]">
                 <h3 class="text-h3 font-bold mb-4 md:mb-3">Pour les évènements</h3>
@@ -54,13 +52,13 @@ get_header();
                 <p class="text-noir">Proposer des jobs étudiants, développer des outils de communication auprès des enseignants et partenaires.</p>
             </div>
             <div class="w-full h-60 overflow-hidden flex items-center justify-end md:justify-center">
-                <?php echo wp_get_attachment_image(43, array(500, 300)); ?>
+                <?php echo wp_get_attachment_image(44, array(500, 300)); ?>
             </div>
         </div>
 
         <div class="flex md:flex-col gap-6 items-center mb-20 sm:mb-12">
             <div class="w-full h-60 overflow-hidden flex items-center md:justify-center">
-                <?php echo wp_get_attachment_image(46, array(500, 300)); ?>
+                <?php echo wp_get_attachment_image(146, array(500, 300)); ?>
             </div>
             <div class="md:justify-items-center sm:mt-[-10px]">
                 <h3 class="text-h3 font-bold mb-4 md:mb-3">Pour le développement</h3>
@@ -74,13 +72,13 @@ get_header();
                 <p class="text-noir">Investir dans du matériel audiovisuel, des supports de communication et des équipements pour gérer les différents évènements.</p>
             </div>
             <div class="w-full h-60 overflow-hidden flex items-center justify-end md:justify-center">
-                <?php echo wp_get_attachment_image(44, array(500, 300)); ?>
+                <?php echo wp_get_attachment_image(40, array(500, 300)); ?>
             </div>
         </div>
 
         <div class="flex md:flex-col gap-6 items-center mb-20 sm:mb-12">
             <div class="w-full h-60 overflow-hidden flex items-center md:justify-center">
-                <?php echo wp_get_attachment_image(45, array(500, 300)); ?>
+                <?php echo wp_get_attachment_image(27, array(500, 300)); ?>
             </div>
             <div class="md:justify-items-center sm:mt-[-10px]">
                 <h3 class="text-h3 font-bold mb-4 md:mb-3">Pour les enseignants</h3>
@@ -91,18 +89,17 @@ get_header();
 
     </div>
 
-    <div class="text-center font-dela-gothic-one relative overflow-hidden h-[19rem]">
-        <img src="http://localhost/LFADC/wp-content/uploads/2023/12/climat-scaled-1.webp" alt="Image de la bannière" class="object-cover w-full h-full" style="object-position: 50% 69%;">
-        <div class="absolute top-0 left-0 w-full h-full opacity-60 bg-blanc z-10"></div>
-        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 w-full">
-            <h1 class="sm:text-h1_mobile text-h1">
-                Envie de soutenir l’association ?
-            </h1>
-            <h3 class='sm:text-h3_mobile text-h3 mt-8 mb-0'>
-                Faites un don !
-            </h3>
+    <a href="<?php echo esc_url(home_url('/adhesion')); ?>">
+        <div class="font-montserrat relative overflow-hidden h-[15em] mt-12 text-h5 font-bold">
+            <img src="<?php echo wp_get_attachment_url(146); ?>" class="object-cover w-full h-full flex items-center" alt="bannière devenir membre">
+            <div class="absolute top-0 left-0 w-full h-full opacity-70 bg-blanc z-10"></div>
+            <div class="absolute font-dela-gothic-one top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 w-full flex flex-col items-center text-center text-bleu px-4">
+                <p class="mb-0">Notre association vous intéresse ?</p>
+                <p class="mb-6">Envie de proposer un projet ou d’y participer ?</p>
+                <p>Vous pouvez devenir membre de notre association, remplissez ce formulaire →</p>
+            </div>
         </div>
-    </div>
+    </a>
 
 </div>
 <?php get_footer(); ?>

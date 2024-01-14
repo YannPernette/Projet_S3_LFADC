@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function () {
 <div class="bg-beige">
         <div class="text-bleu ">
             <header class="header">
-                <a class="img_logo w-36 py-5" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="http://lfadc.kyliangaertner.space/wp-content/uploads/2023/11/Logo-le-futur-a-deja-commence.webp" alt="logo LFADC"></a>
+                <a class="img_logo ml-4 w-36 py-5" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo wp_get_attachment_url(145); ?>" alt="logo LFADC"></a>
                 <!-- logo -->
                 
                 <div class="all_menu flex items-center justify-end md:hidden">
