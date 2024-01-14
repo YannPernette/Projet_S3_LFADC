@@ -11,13 +11,13 @@ get_header();
 <div class="bg-beige text-bleu text-body sm:text-body_mobile">
 
     <div class="text-center relative overflow-hidden h-[19rem]">
-    <img src="<?php echo wp_get_attachment_url(42); ?>" class="object-cover w-full h-full flex items-center" alt="groupe lfadc">
+        <img src="<?php echo wp_get_attachment_url(43); ?>" class="object-cover w-full h-full flex items-center" alt="Bannière Fou2Food">
         <div class="absolute top-0 left-0 w-full h-full opacity-60 bg-blanc z-10"></div>
         <div class="absolute font-dela-gothic-one top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 w-full">
-            <h1 class="sm:text-h1_mobile text-h1">
+            <h1 class="sm:text-h1_mobile text-h1 animBanner">
                 Un défi culinaire
             </h1>
-            <h3 class='sm:text-h3_mobile text-h3 mt-8 mb-0'>
+            <h3 class='sm:text-h3_mobile text-h3 mt-8 mb-0 animBanner'>
                 <?php the_title(); ?> en 2050
             </h3>
         </div>
@@ -38,7 +38,7 @@ get_header();
 
         <div class="grid grid-cols-2 gap-2 md:block mb-24 mx-[10vw] md:mx-0">
             <div class="h-fit flex md:mb-5 md:justify-center">
-                <?php echo wp_get_attachment_image(20, array(400, 400)); ?>
+                <?php echo wp_get_attachment_image(18, array(400, 400)); ?>
             </div>
 
             <div class="px-4 md:mt-5 text-noir">
@@ -47,7 +47,7 @@ get_header();
                 <p>Ainsi avec Fou2Food en 2050, les élèves nous invitent dans un voyage culinaire vers le futur en élaborant un menu.</p>
                 <p class="mb-10">Cet espace s’ajoutera au sein du festival “2050 Look Up!” 2024.</p>
                 <div class="flex justify-center">
-                    <a class="bg-vert-clair hover:bg-vert-fonce transition-colors duration-500 px-8 py-4 md:px-14 border-0 rounded-xl" target="_blank" href="https://www.inrae.fr/actualites/olivier-hamant">
+                    <a class="bg-vert-clair hover:bg-vert-fonce transition-colors duration-500 px-8 py-4 md:px-14 border-0 rounded-xl" target="_blank" href="<?php echo esc_url(home_url('/')); ?>">
                         <p class="m-0 uppercase text-blanc text-[12px] font-bold text-center">Découvrez Fou2Food</p>
                     </a>
                 </div>
@@ -59,7 +59,7 @@ get_header();
 
         <div class="flex md:flex-col gap-6 items-center mb-20 sm:mb-12">
             <div class="w-full h-60 overflow-hidden flex items-center md:justify-center">
-                <?php echo wp_get_attachment_image(42, array(500, 300)); ?>
+                <?php echo wp_get_attachment_image(19, array(500, 300)); ?>
             </div>
             <div class="md:justify-items-center sm:mt-[-10px]">
                 <h3 class="text-h3 font-bold mb-4 md:mb-3">Réalisation des recettes sélectionnées par des grands cuisiners</h3>
@@ -75,13 +75,13 @@ get_header();
                 <p class="text-noir">Une sélection de recettes sera répertoriée dans un livre édité pour l’occasion.</p>
             </div>
             <div class="w-full h-60 overflow-hidden flex items-center justify-end md:justify-center">
-                <?php echo wp_get_attachment_image(43, array(500, 300)); ?>
+                <?php echo wp_get_attachment_image(23, array(500, 300)); ?>
             </div>
         </div>
 
         <div class="flex md:flex-col gap-6 items-center mb-28 sm:mb-12">
             <div class="w-full h-60 overflow-hidden flex items-center md:justify-center">
-                <?php echo wp_get_attachment_image(46, array(500, 300)); ?>
+                <?php echo wp_get_attachment_image(36, array(500, 300)); ?>
             </div>
             <div class="md:justify-items-center sm:mt-[-10px]">
                 <h3 class="text-h3 font-bold mb-4 md:mb-3">Obtention d'un diplôme de participation</h3>
@@ -92,19 +92,17 @@ get_header();
     </div>
 
     <div class="text-center font-bold relative overflow-hidden h-[25rem]">
-        <div class=" w-fit h-full flex items-center">
-            <?php echo wp_get_attachment_image(74, 'full'); ?>
-        </div>
+        <img src="<?php echo wp_get_attachment_url(146); ?>" class="object-cover w-full h-full flex items-center" alt="Site Fou2Food">
         <div class="absolute top-0 left-0 w-full h-full opacity-70 bg-blanc z-10"></div>
         <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 w-full">
-            <h3 class='sm:text-h3_mobile text-h3 mt-0 mb-0'>
+            <h3 class='sm:text-h3_mobile text-h3 mt-0 mb-0 sm:mx-4'>
                 Vous pouvez participer au projet avec nous !
             </h3>
-            <h3 class='sm:text-h3_mobile text-h3 mt-5 mb-0'>
+            <h3 class='sm:text-h3_mobile text-h3 mt-5 mb-0 sm:mx-4'>
                 Rendez-vous sur le site dédié en cliquant sur le bouton ci-dessous
             </h3>
-            <div class="flex justify-center mt-12">
-                <a class="bg-orange hover:bg-orange-fonce transition-colors duration-500 px-10 py-5 border-0 rounded-xl" target="_blank" href="https://www.inrae.fr/actualites/olivier-hamant">
+            <div class="flex justify-center mt-12 sm:mx-4">
+                <a class="bg-orange hover:bg-orange-fonce transition-colors duration-500 px-10 py-5 border-0 rounded-xl" target="_blank" href="<?php echo esc_url(home_url('/')); ?>">
                     <p class="m-0 uppercase text-blanc text-[14px]">Redirection vers le site événementiel</p>
                 </a>
             </div>
