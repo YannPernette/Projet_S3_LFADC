@@ -2381,15 +2381,29 @@ article:hover .image-container {
     padding-right: 0px;
   }
 
+  .md\:text-left {
+    text-align: left;
+  }
+
   .md\:text-center {
     text-align: center;
   }
 }
 
 @media (max-width: 424px) {
+  .sm\:mx-2 {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
   .sm\:mx-\[4vw\] {
     margin-left: 4vw;
     margin-right: 4vw;
+  }
+
+  .sm\:mx-4 {
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 
   .sm\:mb-0 {
@@ -2492,6 +2506,10 @@ article:hover .image-container {
   .sm\:px-4 {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+
+  .sm\:text-left {
+    text-align: left;
   }
 
   .sm\:text-body_mobile {
