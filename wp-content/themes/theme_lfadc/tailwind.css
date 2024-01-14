@@ -3,78 +3,108 @@ Theme Name: Le futur a déjà commencé THEME
 Theme URI: https://monurlpersonnel.com/mesthemes
 Author: Prenom NOM
 Author URI: https://monurlpersonnel.com
-Description: Le thème développer avec Chaton
+Description: Le thème développer pour LFADC
 Version: 0.1
 Tags: simple, facile, sans danger, base pour la suite
 */
 
 @tailwind base;
 
-@layer base {
-  body {
-    @apply font-montserrat;
-    @apply text-body;
-    --sb-track-color: #BDE0D8;
-    --sb-thumb-color: #1f8a70;
-    --sb-size: 11px;
+* {
+  font-family: 'Montserrat', sans-serif;
+}
 
-    scrollbar-color:  var(--sb-thumb-color) 
-                      var(--sb-track-color);
-  }
-  
-    h2 {
-    @apply text-h2;
-  }
+body {
+  color: var(--text-body);
+  --sb-track-color: #BDE0D8;
+  --sb-thumb-color: #1f8a70;
+  --sb-size: 11px;
+}
 
-  h3 {
-    @apply text-h3;
-  }
+body h2 {
+  font-size: 1.625rem;
+}
 
-  body::-webkit-scrollbar {
-    width: var(--sb-size);
-  }
-  
-  body::-webkit-scrollbar-track {
-    background: var(--sb-track-color);
-    border-radius: 4px;
-  }
-  
-  body::-webkit-scrollbar-thumb {
-    background: var(--sb-thumb-color);
-    border-radius: 2px;
-  }
+body h3 {
+  font-size: 1.5rem;
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 4px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 2px;
+}
+
+.animBanner {
+  animation: slide-fade-in 1s ease-out;
+}
+
+.underlineAnimation {
+  text-decoration: none;
+  color: #B85227;
+  display: inline-block;
+  position: relative;
+}
+
+.underlineAnimation:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 2px;
+  content: "";
+  display: block;
+  height: 1.5px;
+  left: 0%;
+  position: absolute;
+  background: #B85227;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.underlineAnimation:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+
 header {
-  @apply bg-blanc;
+  background-color: #ffffff;
   transition: padding-bottom 0.4s ease;
   padding-bottom: 0px;
-  @apply font-montserrat;
+  font-family: 'Montserrat', sans-serif;
 }
 
-  .all_menu ul {
-    @apply flex;
-    @apply justify-between;
-    @apply items-center;
-  }
-
-  .all_menu li {
-    @apply px-2;
-  }
-
-  .all_menu .submenu {
-    display: none;
-    position: absolute;
-    z-index: 1000;
-    background-color: #fff;
-    padding-left: 8px;
-    padding-right: 8px;
-    transform: translateX(-11px);
+.all_menu ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.all_menu #menu-header > li > a {
+.all_menu li {
+  padding: 0 8px;
+}
+
+.all_menu .submenu {
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  background-color: #fff;
+  padding-left: 8px;
+  padding-right: 8px;
+  transform: translateX(-11px);
+}
+
+.all_menu #menu-header>li>a {
   font-size: 0.97rem;
 }
 
-.all_menu #menu-header > li:last-child{
+.all_menu #menu-header>li:last-child {
   background: #EF8731;
   padding: 10px;
   padding-top: 8px;
@@ -83,65 +113,58 @@ header {
   box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.15);
 }
 
-.all_menu #menu-header > li:last-child > a {
-  color: #ffffff; /* Changez la couleur au survol du lien principal */
-  @apply hover:!text-blanc;
+.all_menu #menu-header>li:last-child>a {
+  color: #ffffff;
 }
 
-/* Affichez le menu déroulant au survol */
 .all_menu li:hover .submenu {
-    display: block;
+  display: block;
 }
 
-/* Style supplémentaire pour les éléments de sous-menu */
 .all_menu .submenu li {
-    display: block;
-    width: 100%;
-    padding: 3px;
-    /* Ajoutez d'autres styles selon vos besoins */
+  display: block;
+  width: 100%;
+  padding: 3px;
 }
 
 .all_menu .submenu li:first-child {
   padding-top: 15px;
-  /* Ajoutez d'autres styles selon vos besoins */
 }
 
-/* Styles pour la classe hover:text-orange */
-.all_menu li > a {
-  color: #00425A; /* Changez la couleur au survol du lien principal */
+.all_menu li>a {
+  color: #00425A;
 }
 
-
-.all_menu .submenu li > a {
+.all_menu .submenu li>a {
   font-size: 1rem;
 }
 
-.all_menu > div {
+.all_menu>div {
   margin-right: 0.7em;
 }
 
-.all_menu > div a {
-  @apply hover:text-orange;
+.all_menu>div a {
+  color: #00425A;
 }
 
 .all_menu2 {
-  @apply flex;
-  @apply flex-col;
-  @apply justify-center;
-  @apply items-center;
-  @apply h-screen; /* La hauteur du menu prendra toute la hauteur de l'écran */
-  @apply bg-beige; /* Fond du menu mobile */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #FDF7F1;
 }
 
 .all_menu2 ul {
-  @apply flex;
-  @apply flex-col;
-  @apply items-center;
-  @apply space-y-4; /* Espacement vertical entre les éléments de la liste */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
 .all_menu2 li {
-  @apply px-2;
+  padding: 0 8px;
 }
 
 .all_menu2 .submenu {
@@ -154,12 +177,12 @@ header {
   transform: translateX(-11px);
 }
 
-.all_menu2 #menu-header > li > a {
+.all_menu2 #menu-header>li>a {
   font-size: 0.97rem;
-  color: #00425A; /* Couleur du texte pour les liens principaux */
+  color: #00425A;
 }
 
-.all_menu2 #menu-header > li:last-child {
+.all_menu2 #menu-header>li:last-child {
   background: #EF8731;
   padding: 10px;
   padding-top: 8px;
@@ -168,60 +191,66 @@ header {
   box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.15);
 }
 
-.all_menu2 #menu-header > li:last-child > a {
-  color: #ffffff; /* Couleur du texte pour le dernier lien au survol */
+.all_menu2 #menu-header>li:last-child>a {
+  color: #ffffff;
 }
 
-/* Affichez le menu déroulant au survol */
 .all_menu2 li:hover .submenu {
   display: block;
 }
 
-/* Style supplémentaire pour les éléments de sous-menu */
 .all_menu2 .submenu li {
   display: block;
   width: 100%;
   padding: 3px;
-  /* Ajoutez d'autres styles selon vos besoins */
 }
 
 .all_menu2 .submenu li:first-child {
   padding-top: 15px;
-  /* Ajoutez d'autres styles selon vos besoins */
 }
 
-/* Styles pour la classe hover:text-orange */
-.all_menu2 li > a {
-  color: #00425A; /* Couleur du texte pour les liens principaux */
+.all_menu2 li>a {
+  color: #00425A;
 }
 
-.all_menu2 .submenu li > a {
+.all_menu2 .submenu li>a {
   font-size: 1rem;
 }
 
-.all_menu2 > div {
+.all_menu2>div {
   margin-right: 0.7em;
 }
 
-.all_menu2 > div a {
-  @apply focus:text-orange;
+.all_menu2>div a {
+  color: #00425A;
 }
 
 .hamburger-btn {
-  @apply hidden;
-  @apply md:block /* Cache le bouton sur les écrans larges */
-  @apply text-4xl; /* Ajustez la taille de la police en conséquence */
-  @apply cursor-pointer;
+  display: none;
 }
 
-/* Style pour le menu hamburger ouvert */
-.hamburger-menu-open {
-  @apply md:block;
+.mobmenu-right-bt {
+  right: 11px !important;
+  top: 27px !important;
 }
 
-/* Style pour le menu hamburger fermé */
-.hamburger-menu-closed {
-  @apply md:hidden;
+#mobmenuright {
+  margin-top: 20px !important;
+}
+
+#mobmenuright>li>a {
+  font-family: 'Dela Gothic One', 'sans-serif' !important;
+  font-size: 1.125rem !important;
+}
+
+#mobmenuright>li li>a {
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+  font-size: 1rem !important;
+}
+
+#mobmenuright>li li:last-child>a {
+  padding-bottom: 0.75rem !important;
 }
 
 .menu-icon svg {
@@ -230,89 +259,99 @@ header {
   position: relative;
   left: 1.1em;
   top: 0.3em;
-  }
+}
 
 .menu-icon2 svg {
   height: 1em;
   width: 1em;
   position: relative;
-	left: 2em;
+  left: 2em;
   top: 0.3em;
-  }
+}
 
 .menu-icon3 svg {
   height: 1em;
   width: 1em;
   position: relative;
-	left: 0.3em;
+  left: 0.3em;
   top: 0.3em;
+}
+
+.menu-icon3>a {
+  display: grid;
+  grid-template-columns: 122px 25px;
+}
+
+.menu-icon2>a {
+  display: grid;
+  grid-template-columns: 75px 40px;
+}
+
+.menu-icon>a {
+  display: grid;
+  grid-template-columns: 75px 25px;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.header>.img_logo {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.header>.all_menu {
+  grid-area: 1 / 2 / 2 / 6;
+}
+
+#menu-footer,
+#menu-footer2,
+#menu-footer3,
+#menu-footer4 {
+  margin-bottom: 0;
+}
+
+#menu-footer>li>a,
+#menu-footer2>li>a,
+#menu-footer3>li>a,
+#menu-footer4>li>a {
+  color: #FFFFFF;
+  /* Couleur du texte par défaut */
+  transition: color 0.3s ease;
+}
+
+#menu-footer>li>a:hover,
+#menu-footer2>li>a:hover,
+#menu-footer3>li>a:hover,
+#menu-footer4>li>a:hover {
+  color: #FFFFFF;
+  /* Couleur du texte au survol */
+}
+
+/* Media query pour les tailles d'écran spécifiées */
+@media (max-width: 424px) {
+
+  #menu-footer>li>a,
+  #menu-footer2>li>a,
+  #menu-footer3>li>a,
+  #menu-footer4>li>a {
+    font-size: 0.875rem;
+    /* Taille pour mobile (14px) */
   }
+}
 
-  .menu-icon3 > a {
-    display:grid;
-    grid-template-columns: 122px 25px;
-  }
+@media (min-width: 425px) and (max-width: 767px) {
 
-  .menu-icon2 > a {
-    display:grid;
-    grid-template-columns: 75px 40px;
-  }
-  
-  .menu-icon > a {
-    display:grid;
-    grid-template-columns: 75px 25px;
-  }
-
-  .header {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    }
-    
-    .header > .img_logo {
-      grid-area: 1 / 1 / 2 / 2;
-    }
-    .header > .all_menu {
-      grid-area: 1 / 2 / 2 / 6;
-    }
-
-
-  #menu-footer {
-    @apply space-y-0;
-  }
-
-  #menu-footer2 {
-    @apply space-y-0;
-  }
-
-  #menu-footer3 {
-    @apply space-y-0;
-  }
-
-  #menu-footer4 {
-    @apply space-y-0;
-  }
-
-  #menu-footer > li > a {
-	@apply text-blanc;
-    @apply hover:text-blanc;
-  }
-
-  #menu-footer2 > li > a {
-	@apply text-blanc;
-    @apply hover:text-blanc;
-  }
-
-  #menu-footer3 > li > a {
-	@apply text-blanc;
-    @apply hover:text-blanc;
-  }
-
-  #menu-footer4 > li > a {
-	@apply text-blanc;
-    @apply hover:text-blanc;
+  #menu-footer>li>a,
+  #menu-footer2>li>a,
+  #menu-footer3>li>a,
+  #menu-footer4>li>a {
+    font-size: 1rem;
+    /* Taille pour mobile (16px) */
   }
 }
 
@@ -353,31 +392,80 @@ div.shadow-border:hover::after {
 
 
 .evenement p {
-  @apply mb-10;
+  margin-bottom: 1.5rem;
 }
 
 .evenement h1 {
-  @apply font-bold sm:text-h1_mobile text-h1 mb-3;
+  font-weight: bold;
+  font-size: 2rem;
+  /* Taille pour laptop (32px) */
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
 }
 
 .evenement h2 {
-  @apply font-bold sm:text-h2_mobile text-h2 mb-3;
+  font-weight: bold;
+  font-size: 1.625rem;
+  /* Taille pour laptop (26px) */
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
 }
 
 .evenement h3 {
-  @apply font-bold sm:text-h3_mobile text-h3 mb-3;
+  font-weight: bold;
+  font-size: 1.5rem;
+  /* Taille pour laptop (24px) */
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
 }
 
 .evenement h4 {
-  @apply font-bold sm:text-h4_mobile text-h4 mb-3;
+  font-weight: bold;
+  font-size: 1.375rem;
+  /* Taille pour laptop (22px) */
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
 }
 
 .evenement h5 {
-  @apply font-bold sm:text-h5_mobile text-h5 mb-3;
+  font-weight: bold;
+  font-size: 1.125rem;
+  /* Taille pour laptop (18px) */
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
 }
 
 .evenement figcaption {
-  @apply italic mb-10;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+
+/* Media query pour .evenement figcaption */
+@media (max-width: 767px) {
+  .evenement h1 {
+    font-size: 1.6rem;
+    /* Taille pour mobile (25.6px) */
+  }
+
+  .evenement h2 {
+    font-size: 1.375rem;
+    /* Taille pour mobile (22px) */
+  }
+
+  .evenement h3 {
+    font-size: 1.2rem;
+    /* Taille pour mobile (19.2px) */
+  }
+
+  .evenement h4 {
+    font-size: 1.125rem;
+    /* Taille pour mobile (18px) */
+  }
+
+  .evenement h5 {
+    font-size: 0.9rem;
+    /* Taille pour mobile (14.4px) */
+  }
 }
 
 .dropShadowEvenement {
@@ -386,8 +474,11 @@ div.shadow-border:hover::after {
 
 article:hover .image-container {
   filter: brightness(50%);
-}			
+}
+
+.resp-accordion {
+  font-weight: 600;
+}
 
 @tailwind components;
 @tailwind utilities;
-

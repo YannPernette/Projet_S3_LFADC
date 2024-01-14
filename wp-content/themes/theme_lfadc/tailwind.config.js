@@ -9,7 +9,9 @@ module.exports = {
       "vert-clair": "#1F8A70",
       "vert-fonce": "#205B46",
       "orange": "#EF8731",
+      "orange-fonce": "#B85227",
       "beige": "#FDF7F1",
+      "rose": "#EBDEDE",
 	  "transparent": "transparent",
     },
     fontFamily: {
