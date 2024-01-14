@@ -43,6 +43,18 @@ body::-webkit-scrollbar-thumb {
   border-radius: 2px;
 }
 
+@keyframes slide-fade-in {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 .animBanner {
   animation: slide-fade-in 1s ease-out;
 }

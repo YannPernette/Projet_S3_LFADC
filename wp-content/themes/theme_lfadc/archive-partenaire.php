@@ -3,10 +3,10 @@
 <div class="bg-beige text-bleu text-body sm:text-body_mobile">
 
     <div class="text-center relative overflow-hidden h-[19rem]">
-        <img src="<?php echo wp_get_attachment_url(146); ?>" class="object-cover w-full h-full flex items-center" alt="partenaire affiche">
+        <img src="<?php echo wp_get_attachment_url(146); ?>" class="object-cover w-full h-full flex items-center" alt="Bannière Partenaires">
         <div class="absolute top-0 left-0 w-full h-full opacity-60 bg-blanc z-10"></div>
-        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 w-full">
-            <h1 class="sm:text-h1_mobile font-dela-gothic-one text-h1">
+        <div class="absolute font-dela-gothic-one top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 w-full">
+            <h1 class="sm:text-h1_mobile text-h1 animBanner">
                 Nos partenaires
             </h1>
         </div>
@@ -36,23 +36,19 @@
 
     </div>
 
-    <div class="font-bold relative overflow-hidden h-[19rem]">
-        <div class="object-cover w-full h-full flex items-center">
-            <?php echo wp_get_attachment_image(74, 'full'); ?>
+
+    <a href="<?php echo esc_url(home_url('/adhesion')); ?>">
+        <div class="font-montserrat relative overflow-hidden h-[15em] mt-12 text-h5 font-bold">
+            <img src="<?php echo wp_get_attachment_url(146); ?>" class="object-cover w-full h-full flex items-center" alt="bannière proposer un projet">
+            <div class="absolute top-0 left-0 w-full h-full opacity-70 bg-blanc z-10"></div>
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 w-full flex flex-col items-center text-center text-bleu px-4">
+                <p class="mb-0">Notre association vous intéresse ?</p>
+                <p class="mb-6">Envie de proposer un projet ou d’y participer ?</p>
+                <p>Vous pouvez devenir membre de notre association, remplissez ce formulaire →</p>
+            </div>
         </div>
-        <div class="absolute top-0 left-0 w-full h-full opacity-70 bg-blanc z-10"></div>
-        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 w-[75%] md:w-[80%]">
-            <h3 class='sm:text-h3_mobile text-h3 mb-0'>
-                Notre association vous intéresse ?
-            </h3>
-            <h3 class='sm:text-h3_mobile text-h3 mb-0'>
-                Envie de proposer un projet ou d’y participer ?
-            </h3>
-            <h3 class='sm:text-h3_mobile text-h3 mt-8 mb-0'>
-                Vous pouvez devenir partenaire de notre association, remplissez ce formulaire ici &#8594;
-            </h3>
-        </div>
-    </div>
+    </a>
+
 
     <div class="sm:mx-[4vw] md:mx-[10vw] mx-[20vw] mt-20">
 
@@ -60,7 +56,7 @@
 
         <div class="grid grid-cols-2 gap-4 md:gap-0 md:block mb-20">
             <div class="flex justify-center md:mb-5 w-auto h-fit">
-                <?php echo wp_get_attachment_image(18, array(400, 400)); ?>
+                <?php echo wp_get_attachment_image(37, array(400, 400)); ?>
             </div>
 
             <div class="px-4 text-noir">
@@ -94,7 +90,7 @@
                 </div>
             </div>
 
-            <div class="flex justify-center">
+            <div class="flex justify-center ml-4 md:ml-0">
                 <iframe class="w-[500px] h-[281.25px] md:w-[500px] md:h-[281.25px] sm:w-[100%] sm:h-[50%]" width="560" height="315" src="https://www.youtube.com/embed/Mch1NbbtdBo?si=-7LsZv-CczHL79vu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
         </div>
