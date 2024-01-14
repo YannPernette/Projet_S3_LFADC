@@ -577,6 +577,18 @@ body::-webkit-scrollbar-thumb {
   border-radius: 2px;
 }
 
+@keyframes slide-fade-in {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 .animBanner {
   animation: slide-fade-in 1s ease-out;
 }
@@ -1001,7 +1013,18 @@ div.shadow-border:hover::after {
 }
 
 .dropShadowEvenement {
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  top: 0px;
+  position: relative;
+  background-color: #205B46;
+  text-decoration: none;
+  z-index: 5;
+  overflow: hidden;
+  &:hover {
+    transition: all 0.2s ease-out;
+    box-shadow: 10px 10px 20px rgba(239, 135, 49, 0.5);
+    top: -10px;
+    border: 2px solid #1F8A70;
+  }
 }
 
 article:hover .image-container {
@@ -1490,10 +1513,6 @@ article:hover .image-container {
 
 .w-\[60\%\] {
   width: 60%;
-}
-
-.w-\[75\%\] {
-  width: 75%;
 }
 
 .w-\[85\%\] {
@@ -2285,10 +2304,6 @@ article:hover .image-container {
 
   .md\:w-\[500px\] {
     width: 500px;
-  }
-
-  .md\:w-\[80\%\] {
-    width: 80%;
   }
 
   .md\:w-auto {
