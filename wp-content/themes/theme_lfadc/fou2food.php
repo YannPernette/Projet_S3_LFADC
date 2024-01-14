@@ -28,7 +28,7 @@ get_header();
         <h2 class='sm:text-h2_mobile text-h2 text-bleu mb-16 mt-0 font-bold uppercase text-center'>Nouveauté ! Un défi culinaire (inter)national</h2>
 
         <div class="flex gap-6 justify-center items-center mt-10">
-            <img src="<?php echo wp_get_attachment_url(98); ?>" alt="Logo des Maîtres Cuisiniers de France" class="w-28">
+            <img src="<?php echo wp_get_attachment_url(182); ?>" alt="Logo des Maîtres Cuisiniers de France" class="w-28">
             <p class="max-w-xl">
                 Le futur a déjà commencé et les Maîtres Cuisiniers de France vous proposent de participer au premier défi culinaire “Fou2Food en 2050”.
             </p>

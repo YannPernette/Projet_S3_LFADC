@@ -13,12 +13,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     var header = document.querySelector('.header');
     var isSubMenuOpen = false;
-    var hamburgerBtn = document.querySelector('.hamburger-btn');
-    var menu_mobile = document.querySelector('.all_menu2');
-
-    hamburgerBtn.addEventListener('click', function () {
-        menu_mobile.classList.toggle('md:block');
-    });
 
     function resetStyles() {
         header.style.paddingBottom = '0px';
@@ -31,19 +25,27 @@ document.addEventListener('DOMContentLoaded', function () {
 
     document.querySelectorAll('header>div>div>ul>li').forEach(function (li) {
         li.addEventListener('mouseover', function (event) {
+            var subMenuItems = li.querySelectorAll('.submenu li');
             var hoveredIndex = Array.from(li.parentElement.children).indexOf(li) + 1;
 
-            if (hoveredIndex === 1) {
-                header.style.paddingBottom = '80px';
-                li.querySelector('a').style.color = '#EF8731';
-            } else if (hoveredIndex === 2 || hoveredIndex === 5) {
+            if (subMenuItems.length === 2) {
                 header.style.paddingBottom = '50px';
                 li.querySelector('a').style.color = '#EF8731';
-            } else if (hoveredIndex === 3 || hoveredIndex === 4) {
+            } else if (subMenuItems.length === 3) {
+                header.style.paddingBottom = '75px';
+                li.querySelector('a').style.color = '#EF8731';
+            } else if (subMenuItems.length === 4) {
+                header.style.paddingBottom = '100px';
+                li.querySelector('a').style.color = '#EF8731';
+            } else if (subMenuItems.length === 0) {
                 resetStyles();
                 li.querySelector('a').style.color = '#EF8731';
-            } else if (hoveredIndex === 6) {
-                li.style.backgroundColor = '#B85227';
+                if (li === li.parentElement.lastElementChild) {
+                    li.style.backgroundColor = '#B85227';
+                    li.querySelector('a').style.color = '#FFFFFF';
+                } else {
+                    li.querySelector('a').style.color = '#EF8731';
+                }
             }
         });
 
